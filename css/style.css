@@ -25,6 +25,7 @@ header nav ul li a{
 /*Banner de inicio*/
 #banner{
     height: 547px;/*Alto del banner*/
+    width: 100%;/*Ancho del banner*/
     background-image:url("../images/helados.jpg");/*Imagen de fondo*/
     background-repeat: no-repeat;/*No se repite la imagen*/
     background-position:bottom;/*Posiciono la imagen con referencia al borde de abajo*/
