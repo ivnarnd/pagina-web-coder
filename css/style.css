@@ -1,10 +1,29 @@
 body{
     background-color: #CFE8EF;
 }
+/*Encabezado de la pagina*/
 header{
     background-color: #AED1E6;
+    color: #FFFFFF;/*Color del texto dentro del header*/
 }
-section{
+/*Menu de navegacion*/
+header nav ul{
+    list-style-type: none;/*Quita los puntos de la lista*/
+}
+/*Estilo de los enlaces del menu*/
+header nav ul li a{
+    text-decoration: none;/*Quita el subrayado de los enlaces*/
+    color: #FFFFFF;/*Color del texto de los enlaces*/
+}
+
+
+
+
+
+
+
+
+#intro{
     background-color: #FFFFFF;
 }
 footer{
