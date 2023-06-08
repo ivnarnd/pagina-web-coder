@@ -52,7 +52,7 @@ header nav ul li a{
 }
 /*Main*/
 main{
-    display: inline-block;/*Para que el main se muestre en linea*/
+
     width: 100vw;/*Ancho del main*/
     height: 86vh;/*Alto del main*/
 }
@@ -81,15 +81,16 @@ main{
 
 /*Seccion de bienvenida*/
 #intro{
-    position: relative;/*Para que el div se posicione con referencia al main*/
+    
     background-color: #FFFFFF;
     height: 20%;
     text-align: center;
 }
 /*Seccion de contacto*/
 #info{
-    position: relative;/*Para que el div se posicione con referencia al main*/
+    
     height: 30%;
+    text-align: center;
 }
 /*item de la lista de contacto*/
 #info ul li{
@@ -100,4 +101,6 @@ main{
 footer{
     height: 7vh;/*Alto del footer*/
     background-color: #AED1E6;
+    text-align: center;
+    
 }
