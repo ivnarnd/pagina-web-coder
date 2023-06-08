@@ -19,6 +19,7 @@ header{
     height: 10vh;/*Alto del header*/
     font-size: 0;/*Para que el titulo y el menu se muestren en linea sin el bug de display*/
 }
+
 /*Titulo de la pagina*/
 body header h1{
 
@@ -29,6 +30,7 @@ body header h1{
     display: inline-block;/*Para que el titulo se muestre en linea*/
     vertical-align: center;/*Para que el titulo se muestre en el centro verticalmente*/
 }
+
 /*Menu de navegacion*/
 body header nav{
     font-size: 0;/*Para que el titulo y el menu se muestren en linea sin el bug de display*/
@@ -38,12 +40,13 @@ body header nav{
     text-align: right;/*Para que el menu se muestre a la derecha*/
     vertical-align: center;/*Para que el menu se muestre en el centro verticalmente*/
 }
+
 /*item de link*/
 header nav ul li{
     display: inline-block;/*Para que los elementos de la lista se muestren en linea*/
     list-style-type: none;/*Quita los puntos de la lista*/
-    
 }
+
 /*Estilo de los enlaces del menu*/
 header nav ul li a{
     text-decoration: none;/*Quita el subrayado de los enlaces*/
@@ -51,7 +54,6 @@ header nav ul li a{
     font-size: 24px;/*Tamaño de la letra*/
     padding: 5px;/*Espacio entre el texto y el borde del enlace*/
 }
-
 
 /*Banner de inicio*/
 #banner{
@@ -74,12 +76,17 @@ header nav ul li a{
     /* font-family: 'Raleway', sans-serif; */
 }
 
+/*Main*/
+main{
+    height: 80vh;/*Alto del main*/
+}
 /*Seccion de bienvenida*/
 #intro{
     background-color: #FFFFFF;
+    height: 40vh;
 }
-
 /*Pie de pagina*/
 footer{
+    height: 5vh;/*Alto del footer*/
     background-color: #AED1E6;
 }
