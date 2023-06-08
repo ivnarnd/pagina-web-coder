@@ -95,7 +95,25 @@ main{
 /*item de la lista de contacto*/
 #info ul li{
     display: inline-block;
+    list-style-type: none;
+    margin: 20px;
 }
+
+/*iconos de los items de contacto*/
+.icono-item-contacto{
+    font-size: 24px;
+}
+/*titulo de los items de contacto*/
+.titulo-item-contacto{
+    font-family: 'Pacifico', cursive;
+    font-size: 32px;
+    color: #FFFFFF;
+    
+}
+
+
+
+
 
 /*Pie de pagina*/
 footer{
