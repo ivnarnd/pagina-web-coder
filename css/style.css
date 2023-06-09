@@ -107,6 +107,9 @@ main{
 .item-contacto{
     display: inline-block;
     list-style-type: none;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    text-align: center;
    
 }
 
@@ -117,16 +120,23 @@ main{
 /*titulo de los items de contacto*/
 .titulo-item-contacto{
     font-family: 'Pacifico', cursive;
-    font-size: 2,5rem;
+    font-size: 2.5rem;
+    font-weight: lighter;
     color: #FFFFFF;
     
 }
-
-
-/*Iconos de redes sociales*/
-.item-redes{
-    margin: 0;/*Espacio entre los iconos*/
+/*texto debajo del item*/
+.item-contacto p{
+    font-size: 1.5rem;
+    
 }
+/*item de redes*/
+.item-redes{
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px;
+}
+
 /*Imagen de los iconos de redes*/
 .logo-redes{
     width: 25px;/*Ancho de la imagen*/
