@@ -78,13 +78,13 @@ main{
 
 
 /*Seccion de bienvenida*/
-#intro{
+.intro{
     
     background-color: #FFFFFF;
     height: 20%;
     text-align: center;
 }
-#intro p{
+.intro p{
     font-size: 1.5rem;
 }
 /*titulos*/
