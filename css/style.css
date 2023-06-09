@@ -152,3 +152,8 @@ footer{
     text-align: center;
     
 }
+footer p{
+    font-size: 1.25rem;
+    padding-top: 10px;
+    color: #FFFFFF;
+}
