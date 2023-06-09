@@ -20,7 +20,7 @@ header{
 }
 
 /*Titulo de la pagina*/
-#titulo-pagina{
+.titulo-pagina{
     font-family: 'Pacifico', cursive;/*Fuente de letra*/
     font-size: 1.5rem;/*Tamaño de la letra*/
     width: 20%;/*Ancho del titulo*/
