@@ -20,12 +20,13 @@ header{
 }
 
 /*Titulo de la pagina*/
-body header h1{
+#titulo-pagina{
     font-family: 'Pacifico', cursive;/*Fuente de letra*/
-    font-size: 32px;/*Tamaño de la letra*/
+    font-size: 1.5rem;/*Tamaño de la letra*/
     width: 20%;/*Ancho del titulo*/
     display: inline-block;/*Para que el titulo se muestre en linea*/
     vertical-align: center;/*Para que el titulo se muestre en el centro verticalmente*/
+    padding-left: 16px;/*Espacio entre el texto y el borde del titulo*/
 }
 
 /*Menu de navegacion*/
@@ -114,8 +115,11 @@ main{
 .item-redes{
     margin: 0;/*Espacio entre los iconos*/
 }
-
-
+/*Imagen de los iconos de redes*/
+.logo-redes{
+    width: 25px;/*Ancho de la imagen*/
+    height: 25px;/*Alto de la imagen*/
+}
 
 
 
