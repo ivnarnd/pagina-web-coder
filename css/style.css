@@ -73,7 +73,7 @@ main{
 /*titulos*/
 .titulo{
     font-family: 'Pacifico', cursive;
-    font-size: 64px;
+    font-size: 56px;
     color: #A0C4E2;
     /* font-family: 'Raleway', sans-serif; */
 }
@@ -96,7 +96,7 @@ main{
 #info ul li{
     display: inline-block;
     list-style-type: none;
-    margin: 20px;
+   
 }
 
 /*iconos de los items de contacto*/
@@ -109,6 +109,10 @@ main{
     font-size: 32px;
     color: #FFFFFF;
     
+}
+/*Iconos de redes sociales*/
+.item-redes{
+    margin: 0;/*Espacio entre los iconos*/
 }
 
 
