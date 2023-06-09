@@ -30,7 +30,7 @@ header{
 }
 
 /*Menu de navegacion*/
-body header nav{
+.barra-nav{
     font-size: 0;/*Para que el titulo y el menu se muestren en linea sin el bug de display*/
     width: 80%;/*Ancho del menu*/
     display: inline-block;/*Para que el menu se muestre en linea*/
@@ -39,13 +39,13 @@ body header nav{
 }
 
 /*item de link*/
-header nav ul li{
+.item-enlace-barra{
     display: inline-block;/*Para que los elementos de la lista se muestren en linea*/
     list-style-type: none;/*Quita los puntos de la lista*/
 }
 
 /*Estilo de los enlaces del menu*/
-header nav ul li a{
+.enlace-barra{
     text-decoration: none;/*Quita el subrayado de los enlaces*/
     color: #FFFFFF;/*Color del texto de los enlaces*/
     font-size: 24px;/*Tamaño de la letra*/
