@@ -48,7 +48,7 @@ header{
 .enlace-barra{
     text-decoration: none;/*Quita el subrayado de los enlaces*/
     color: #FFFFFF;/*Color del texto de los enlaces*/
-    font-size: 24px;/*Tamaño de la letra*/
+    font-size: 1.25rem;/*Tamaño de la letra*/
     padding: 5px;/*Espacio entre el texto y el borde del enlace*/
 }
 /*Main*/
@@ -67,17 +67,13 @@ main{
     background-size:cover;/*La imagen se ajusta al tamaño del contenedor*/
     font-family: 'Pacifico', cursive;/*Fuente de letra*/
     color: #FFFFFF;/*Color del texto*/
-    font-size: 96px;/*Tamaño de la letra*/
+    
     text-align: center;/*Texto centrado*/
 }
-
-/*titulos*/
-.titulo{
-    font-family: 'Pacifico', cursive;
-    font-size: 56px;
-    color: #A0C4E2;
-    /* font-family: 'Raleway', sans-serif; */
+#banner h2{
+    font-size: 6rem;/*Tamaño de la letra*/
 }
+
 
 
 /*Seccion de bienvenida*/
@@ -87,14 +83,28 @@ main{
     height: 20%;
     text-align: center;
 }
-/*Seccion de contacto*/
+#intro p{
+    font-size: 1.5rem;
+}
+/*titulos*/
+.titulo{
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    color: #A0C4E2;
+    /* font-family: 'Raleway', sans-serif; */
+}
+
+
+
+
+
+/*Seccion de info*/
 #info{
-    
     height: 30%;
     text-align: center;
 }
 /*item de la lista de contacto*/
-#info ul li{
+.item-contacto{
     display: inline-block;
     list-style-type: none;
    
@@ -102,15 +112,17 @@ main{
 
 /*iconos de los items de contacto*/
 .icono-item-contacto{
-    font-size: 24px;
+    font-size: 2.5rem;
 }
 /*titulo de los items de contacto*/
 .titulo-item-contacto{
     font-family: 'Pacifico', cursive;
-    font-size: 32px;
+    font-size: 2,5rem;
     color: #FFFFFF;
     
 }
+
+
 /*Iconos de redes sociales*/
 .item-redes{
     margin: 0;/*Espacio entre los iconos*/
