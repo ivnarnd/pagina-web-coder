@@ -28,9 +28,36 @@
     <!--Seccion Principal-->
     <main>
     <!--Seccion de bienvenida de la pagina-->
-       <section class="intro">
+       <section class="contenedor-titulo">
             <h3 class="titulo">Contacto</h3>
         </section>
+        <section>
+            <h4>
+                Dejanos tu consulta!
+            </h4>
+            <form action="" method="POST">
+                <label for="nombre">
+                    Nombre:
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre">
+                </label>
+                <label for="correo">
+                    Correo:
+                    <input type="email" name="correo" id="correo" placeholder="Nombre@gmail.com">
+                </label>
+                <label for="telefono">
+                    N° de Telefono:
+                    <input type="number" name="telefono" id="telefono" placeholder="+542213456789">
+                </label>
+                <label for="mensaje">
+                    Mensaje:
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese aqui su Mensaje..."></textarea>
+                </label>
+                <input type="submit" value="Enviar">
+
+    
+            </form>
+        </section>
+
     </main>
     <footer>
         <p> Desarrollado por Ivan Aranda - 2023 &#169</p>
