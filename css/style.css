@@ -197,6 +197,7 @@ footer p{
    
     border-radius: 20px;
 }
+
 /*Imagen del trabajador*/
 .imagen-trabajador{
     display: inline-block;
@@ -223,20 +224,31 @@ footer p{
 /*CONTACTO*/
 /*Contenedor del formulario*/
 .contenedor-formulario{
-    
-    width: 70%;
+    margin-top: 1rem;
+    width: 100%;
     color: #FFFFFF;
     text-align: center;
     background-color: #AED1E6;
     border-radius: 20px;
 }
-/*Formulario de contacto*/
-.formulario-contacto{
-   
-}
+
 /*Mensaje del formulario*/
 .mensaje-formulario{
     font-size: 2rem;
     font-family: 'Pacifico', cursive;
     color: #FFFFFF;
+    text-align: center;
+}
+/*contenedor de input y texto*/
+.formulario-contacto label{
+    font-size: 1.5rem;
+    font-family: Raleway, sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    display: block;
+}
+/*input*/
+.formulario-contacto label input{
+    border-radius: 20px;
+    display:block ;
 }
