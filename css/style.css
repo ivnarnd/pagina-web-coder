@@ -165,11 +165,12 @@ footer p{
 /*Estilos para clases generales entre las paginas*/
 .main-justificado{
    padding-left: 15%;
+   padding-right: 15%;
 }
 .contenedor-titulo{
     text-align: center;
     border-bottom: #FFFFFF 2px solid;
-    width: 70%;
+    width: 100%;
 }
 .contenedor-titulo .titulo{
     color: #FFFFFF;
@@ -180,7 +181,7 @@ footer p{
 .descripcion{
     margin-top: 1rem;
     padding: 2rem;
-    width: 70%;
+    width: 100%;
     color: #000000;
     text-align: center;
     background-color: #FFFFFF;
@@ -190,7 +191,7 @@ footer p{
 /*seccion del staff de personas*/
 .contenedor-staff{
     padding: 1rem;
-    width: 70%;
+    width: 100%;
     color: #000000;
     text-align: center;
    
@@ -215,4 +216,27 @@ footer p{
     font-family: 'pacifico', cursive;
     font-size: 1.5rem;
     color: #8C8888;
+}
+
+
+
+/*CONTACTO*/
+/*Contenedor del formulario*/
+.contenedor-formulario{
+    
+    width: 70%;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #AED1E6;
+    border-radius: 20px;
+}
+/*Formulario de contacto*/
+.formulario-contacto{
+   
+}
+/*Mensaje del formulario*/
+.mensaje-formulario{
+    font-size: 2rem;
+    font-family: 'Pacifico', cursive;
+    color: #FFFFFF;
 }
