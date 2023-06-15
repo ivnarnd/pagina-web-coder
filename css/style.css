@@ -2,77 +2,76 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;/*Incluimos en el calculo padding y border*/
+    box-sizing: border-box;
 }
 
 /*Cuerpo de la pagina*/
 body{
     background-color: #CFE8EF;
-    font-family: 'Raleway','sans-serif';/*Fuente de letra*/
+    font-family: 'Raleway','sans-serif';
 }
 
 /*Encabezado de la pagina*/
 header{
     background-color: #AED1E6;
-    color: #FFFFFF;/*Color del texto dentro del header*/
-    height: 7vh;/*Alto del header*/
-    font-size: 0;/*Para que el titulo y el menu se muestren en linea sin el bug de display*/
+    color: #FFFFFF;
+    height: 7vh;
+    font-size: 0;
 }
 
 /*Titulo de la pagina*/
 .titulo-pagina{
-    font-family: 'Pacifico', cursive;/*Fuente de letra*/
-    font-size: 1.5rem;/*Tamaño de la letra*/
-    width: 20%;/*Ancho del titulo*/
-    display: inline-block;/*Para que el titulo se muestre en linea*/
-    vertical-align: center;/*Para que el titulo se muestre en el centro verticalmente*/
-    padding-left: 16px;/*Espacio entre el texto y el borde del titulo*/
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    width: 20%;
+    display: inline-block;
+    vertical-align: center;
+    padding-left: 16px;
 }
 
 /*Menu de navegacion*/
 .barra-nav{
-    font-size: 0;/*Para que el titulo y el menu se muestren en linea sin el bug de display*/
-    width: 80%;/*Ancho del menu*/
-    display: inline-block;/*Para que el menu se muestre en linea*/
-    text-align: right;/*Para que el menu se muestre a la derecha*/
-    vertical-align: center;/*Para que el menu se muestre en el centro verticalmente*/
+    font-size: 0;
+    width: 80%;
+    display: inline-block;
+    text-align: right;
+    vertical-align: center;
 }
 
 /*item de link*/
 .item-enlace-barra{
-    display: inline-block;/*Para que los elementos de la lista se muestren en linea*/
-    list-style-type: none;/*Quita los puntos de la lista*/
+    display: inline-block;
+    list-style-type: none;
 }
 
 /*Estilo de los enlaces del menu*/
 .enlace-barra{
-    text-decoration: none;/*Quita el subrayado de los enlaces*/
-    color: #FFFFFF;/*Color del texto de los enlaces*/
-    font-size: 1.25rem;/*Tamaño de la letra*/
-    padding: 5px;/*Espacio entre el texto y el borde del enlace*/
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    padding: 5px;
 }
 /*Main*/
 main{
 
-    width: 100vw;/*Ancho del main*/
-    height: 86vh;/*Alto del main*/
+    width: 100vw;
+    height: 86vh;
 }
 /*Banner de inicio*/
 #banner{
-    height: 50%;/*Alto del banner*/
-    width: 100vw;/*Ancho del banner*/
-    background-image:url("../images/helados.jpg");/*Imagen de fondo*/
-    background-repeat: no-repeat;/*No se repite la imagen*/
-    background-position-y:90%;/*Posiciono la imagen con referencia al borde de abajo*/
-    background-size:cover;/*La imagen se ajusta al tamaño del contenedor*/
-    font-family: 'Pacifico', cursive;/*Fuente de letra*/
-    color: #FFFFFF;/*Color del texto*/
+    height: 50%;
+    width: 100vw;
+    background-image:url("../images/helados.jpg");
+    background-repeat: no-repeat;
+    background-position-y:90%;
+    background-size:cover;
+    font-family: 'Pacifico', cursive;
+    color: #FFFFFF;
     
-    text-align: center;/*Texto centrado*/
+    text-align: center;
 }
 #banner h2{
-    font-size: 6rem;/*Tamaño de la letra*/
-   
+    font-size: 6rem;
 }
 
 
@@ -92,7 +91,6 @@ main{
     font-family: 'Pacifico', cursive;
     font-size: 3rem;
     color: #A0C4E2;
-    /* font-family: 'Raleway', sans-serif; */
 }
 
 
@@ -140,15 +138,15 @@ main{
 
 /*Imagen de los iconos de redes*/
 .logo-redes{
-    width: 25px;/*Ancho de la imagen*/
-    height: 25px;/*Alto de la imagen*/
+    width: 25px;
+    height: 25px;
 }
 
 
 
 /*Pie de pagina*/
 footer{
-    height: 7vh;/*Alto del footer*/
+    height: 7vh;
     background-color: #AED1E6;
     text-align: center;
     
