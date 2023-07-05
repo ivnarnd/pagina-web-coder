@@ -10,13 +10,21 @@
 body{
     background-color: #CFE8EF;
     font-family: 'Raleway','sans-serif';
-    display: flex;
-    flex-direction: column;
+    display:grid;
+    grid-template-rows: 7vh 86vh 7vh;
+    grid-template-columns:100% ;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer"
+    ;
+
     
 }
 
 /*Encabezado de la pagina*/
 header{
+    grid-area: header;
     background-color: #AED1E6;
     color: #FFFFFF;
     height: 7vh;
@@ -63,7 +71,7 @@ header{
 }
 /*Main*/
 main{
-
+    grid-area: main;
     width: 100vw;
     height: 86vh;
     display: flex;
@@ -178,6 +186,7 @@ main{
 
 /*Pie de pagina*/
 footer{
+    grid-area: footer;
     height: 7vh;
     background-color: #AED1E6;
     display:flex;
