@@ -262,6 +262,8 @@ footer p{
     text-align: center;
     background-color: #AED1E6;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 /*Mensaje del formulario*/
@@ -271,16 +273,29 @@ footer p{
     color: #FFFFFF;
     text-align: center;
 }
+.formulario-contacto{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
 /*contenedor de input y texto*/
 .formulario-contacto label{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
     font-size: 1.5rem;
     font-family: Raleway, sans-serif;
     color: #FFFFFF;
     text-align: center;
-    display: block;
+  
+}
+#mensaje-usuario{
+    width: 70%;
 }
 /*input*/
 .formulario-contacto label input{
     border-radius: 20px;
-    display:block ;
+    width: 60%;
+    
 }
