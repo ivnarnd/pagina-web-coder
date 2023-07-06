@@ -377,7 +377,20 @@ footer p{
 
 
 /*ESTILOS DE TIENDA*/
+
+.contenedor-tienda{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+   
+    "busqueda"
+    "favoritos"
+    "sabores"
+    ;
+}
 .busqueda{
+    grid-area: busqueda;
     background-color: #8C8888;
 }
 .barra-busqueda{
@@ -411,8 +424,9 @@ footer p{
     border-radius: 100%;
 }
 
-
-main-grid{
-    display: grid;
-   
+.seccion-favoritos{
+    grid-area: favoritos;
+}
+.seccion-sabores{
+    grid-area: sabores;
 }
