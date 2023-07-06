@@ -379,7 +379,8 @@ footer p{
 /*ESTILOS DE TIENDA*/
 
 .contenedor-tienda{
-    height: 80%;
+    background-color: orange;
+    height: 85%;
     display: grid;
     grid-template-rows: repeat(3,1fr);
     grid-template-columns: 1fr;
@@ -436,4 +437,23 @@ footer p{
     grid-area: sabores;
     height: 40%;
     background-color: greenyellow;
+}
+.contenedor-sabores-tienda{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sabor-item{
+    background-color: #AED1E6;
+    display: flex;
+    flex-wrap: wrap;
+}
+.detalle-sabor{
+    display: flex;
+    flex-direction: column;
+}
+.sabor-item img{
+    width: 150px;
+    height: 150px;
 }
