@@ -372,3 +372,47 @@ footer p{
 .contenedor-botones button{
     color: #AED1E6;
 }
+
+
+
+
+/*ESTILOS DE TIENDA*/
+.busqueda{
+    background-color: #8C8888;
+}
+.barra-busqueda{
+    background-color: red;
+}
+
+.filtro-peso{
+    background-color: aquamarine;
+    height: 60%;
+}
+
+
+
+.lista-peso{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    height: 100%;
+    
+}
+
+.item-peso{
+    background-color: red;
+    width: 20%;
+    height: 100%;
+}
+
+.item-peso input{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+
+main-grid{
+    display: grid;
+   
+}
