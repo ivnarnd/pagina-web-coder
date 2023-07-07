@@ -457,3 +457,24 @@ footer p{
     width: 150px;
     height: 150px;
 }
+
+
+
+/*MEDIA QUERY*/
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+
+  }
+  
+  /* Estilos para tablets y dispositivos con pantalla más grande */
+  @media only screen and (min-width: 768px) {
+
+  }
+  
+  /* Estilos para escritorio */
+  @media only screen and (min-width: 1024px) {
+
+  }
+  
+  
+  
