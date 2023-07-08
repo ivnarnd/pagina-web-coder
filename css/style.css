@@ -11,15 +11,15 @@ body{
     background-color: #CFE8EF;
     font-family: 'Raleway','sans-serif';
     display:grid;
+    grid-template-rows: 7vh 86vh 7vh;
+    grid-template-columns: 100vw;
     grid-template-areas:
     "header"
     "main"
     "footer"
     ;
 }
-.index-body{
-    grid-template-rows: 7vh 86vh 7vh;
-}
+
 /*Encabezado de la pagina*/
 nav{
     grid-area: header;
@@ -186,12 +186,12 @@ main{
 footer{
     grid-area: footer;
     background-color: #AED1E6;
-    display:flex;
-    justify-content: center;
+    position:fixed;
+    bottom: 0px;
    
 }
 footer p{
-
+    display: inline-block;
     font-size: 1.25rem;
    
     color: #FFFFFF;
@@ -205,8 +205,41 @@ footer p{
 @media only screen and (max-width: 768px) {
 .index-body, body{
     grid-template-rows: auto auto auto;
+
 }
-/**/
+/*BANNER*/
+#banner{
+    display: none;
+}
+/*ENLACES A DEMAS PAGINAS*/
+.seccion-enlaces{
+    display: flex;
+    background-color: #FFFFFF;
+    
+}
+.lista-enlaces{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-flow: column wrap;
+}
+.lista-enlaces-item{
+    font-family: pacifico;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #AED1E6;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top:2px dotted #FFFFFF;
+}
+.lista-enlaces-item a{
+    text-decoration: none;
+    color: inherit;
+}
 /*Seccion de info*/
 .lista-contacto{
     padding: 0;
@@ -219,10 +252,14 @@ footer p{
     padding: 0;
     margin: 0;
 }
+footer{
+    position: relative;
+    bottom: 0;
+}
 }
   
   /* Estilos para tablets y dispositivos con pantalla más grande */
-  @media only screen and (min-width: 768px)  and (max-width: 992px) {
+  @media only screen and (min-width: 769px)  and (max-width: 992px) {
     .index-body{
         grid-template-rows: auto auto auto;
         background-color: red;
