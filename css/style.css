@@ -10,8 +10,7 @@ body{
     background-color: #CFE8EF;
     font-family: 'Raleway','sans-serif';
     display:grid;
-    grid-template-rows: 7vh 86vh 7vh;
-    grid-template-columns:100% ;
+
     grid-template-areas:
     "header"
     "main"
@@ -26,7 +25,7 @@ nav{
     grid-area: header;
     background-color: #AED1E6;
     color: #FFFFFF;
-    height: 7vh;
+    
     font-size: 0;
     display: flex;
     justify-content: space-around;
@@ -62,7 +61,7 @@ nav{
 main{
     grid-area: main;
     width: 100vw;
-    height: 86vh;
+   
     display: flex;
     flex-direction: column;
 }
@@ -176,11 +175,11 @@ main{
 /*Pie de pagina*/
 footer{
     grid-area: footer;
-    height: 7vh;
+    
     background-color: #AED1E6;
     display:flex;
     justify-content: center;
-    position:relative;
+   
 }
 footer p{
 
