@@ -67,7 +67,7 @@ nav{
 /*Main*/
 #seccion-principal{
     grid-area: main;
-    height: 86vh;
+    
 }
 main{
     grid-area: main;
@@ -80,7 +80,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40%;
+    height: 50%;
     width: 100vw;
     background-image:url("../images/helados.jpg");
     background-repeat: no-repeat;
@@ -103,7 +103,6 @@ main{
 .intro{
     
     background-color: #FFFFFF;
-    height: 20%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -134,10 +133,12 @@ main{
 }
 .lista-contacto{
     display: flex;
+    flex-wrap: nowwrap;
     justify-content: space-around;
 }
 /*item de la lista de contacto*/
 .item-contacto{
+    flex: 200px;
     flex-wrap: nowrap;
     display: flex;
     flex-direction: column;
@@ -145,9 +146,6 @@ main{
     align-items: center;
     list-style-type: none;
     margin-top: 2rem;
-    margin-left: 2rem;
-    
-   
 }
 
 /*iconos de los items de contacto*/
@@ -187,7 +185,6 @@ main{
 /*Pie de pagina*/
 footer{
     grid-area: footer;
-    height: 7vh;
     background-color: #AED1E6;
     display:flex;
     justify-content: center;
@@ -203,271 +200,13 @@ footer p{
 
 
 
-/*Estilos para clases generales entre las paginas*/
-.main-justificado{
-   padding-left: 5%;
-   padding-right: 5%;
-}
-.contenedor-titulo{
-    text-align: center;
-    border-bottom: #FFFFFF 2px solid;
-    width: 100%;
-}
-.contenedor-titulo .titulo{
-    color: #FFFFFF;
-}
-
-/*NOSOTROS*/
-/*Seccion de descripcion*/
-.descripcion{
-    margin-top: 1rem;
-    padding: 2rem;
-    width: 100%;
-    color: #000000;
-    text-align: center;
-    background-color: #FFFFFF;
-    border-radius: 20px;
-}
-
-/*seccion del staff de personas*/
-.contenedor-staff{
-    padding: 1rem;
-    width: 100%;
-    color: #000000;
-    text-align: center;
-   
-    border-radius: 20px;
-}
-
-/*Imagen del trabajador*/
-.imagen-trabajador{
-    display: inline-block;
-    font-size: 7rem;
-    background-color: #FFFFFF;
-    border-radius: 100%;
-    border: #FFFFFF 2px solid;
-}
-/*Nombre de cada trabajador h4*/
-.nombre-trabajador{
-    font-family: 'Raleway', sans-serif;
-    font-size: 2rem;
-    color: #FFFFFF;
-}
-/*Puesto de cada trabajador h5*/
-.puesto-trabajador{
-    font-family: 'pacifico', cursive;
-    font-size: 1.5rem;
-    color: #8C8888;
-}
-
-
-
-/*CONTACTO*/
-/*Contenedor del formulario*/
-.contenedor-formulario{
-    margin-top: 1rem;
-    width: 100%;
-    color: #FFFFFF;
-    text-align: center;
-    background-color: #AED1E6;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-/*Mensaje del formulario*/
-.mensaje-formulario{
-    font-size: 2rem;
-    font-family: 'Pacifico', cursive;
-    color: #FFFFFF;
-    text-align: center;
-}
-.formulario-contacto{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-}
-/*contenedor de input y texto*/
-.formulario-contacto label{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    font-size: 1.5rem;
-    font-family: Raleway, sans-serif;
-    color: #FFFFFF;
-    text-align: center;
-  
-}
-#mensaje-usuario{
-    width: 70%;
-}
-/*input*/
-.formulario-contacto label input{
-    border-radius: 20px;
-    width: 60%;
-    
-}
-
-
-/*ESTILOS PARA PAGINA SABORES*/
-.contenedor-sabores{
-    
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.contenedor-sabor{
-    background-color: #AED1E6;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 40%;
-    width: 100%;
-}
-
-.contenedor-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 27%;
-    height: 90%;
-    border-radius: 15px;
-}
-.contenedor-img img{
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-
-}
-.info-sabor{
- 
-    width: 67%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.info-sabor h3{
-    color: #FFFFFF;
-}
-.contenedor-botones{
-   
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.contenedor-botones button{
-    background-color: #FFFFFF;
-    width: 30%;
-    border-radius: 15px;
-    border: none;
-    
-}
-.contenedor-botones button{
-    color: #AED1E6;
-}
-
-
-
-
-/*ESTILOS DE TIENDA*/
-
-.contenedor-tienda{
-    background-color: orange;
-    height: 85%;
-    display: grid;
-    grid-template-rows: repeat(3,1fr);
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-   
-    "busqueda"
-    "favoritos"
-    "sabores"
-    ;
-}
-.busqueda{
-    grid-area: busqueda;
-    background-color: #8C8888;
-    height: 20%;
-}
-.barra-busqueda{
-    background-color: red;
-    
-}
-
-.filtro-peso{
-    background-color: aquamarine;
-    
-}
-
-
-
-.lista-peso{
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-    height: 100%;
-    
-}
-
-.item-peso{
-    background-color: red;
-    width: 20%;
-    height: 100%;
-}
-
-.item-peso input{
-    width: 100%;
-    height: 100%;
-    border-radius: 100%;
-}
-
-.seccion-favoritos{
-    grid-area: favoritos;
-    height: 40%;
-    background-color: green;
-}
-.seccion-sabores{
-    grid-area: sabores;
-    height: 40%;
-    background-color: greenyellow;
-}
-.contenedor-sabores-tienda{
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.sabor-item{
-    background-color: #AED1E6;
-    display: flex;
-    flex-wrap: wrap;
-}
-.detalle-sabor{
-    display: flex;
-    flex-direction: column;
-}
-.sabor-item img{
-    width: 150px;
-    height: 150px;
-}
-
-
-
 /*MEDIA QUERY*/
 /* Estilos para dispositivos móviles */
 @media only screen and (max-width: 768px) {
-/*Seccion principal*/
-#seccion-principal{
-    height: auto;
+.index-body, body{
+    grid-template-rows: auto auto auto;
 }
+/**/
 /*Seccion de info*/
 .lista-contacto{
     padding: 0;
@@ -483,7 +222,11 @@ footer p{
 }
   
   /* Estilos para tablets y dispositivos con pantalla más grande */
-  @media only screen and (min-width: 768px)  and (max-width: 1024px) {
+  @media only screen and (min-width: 768px)  and (max-width: 992px) {
+    .index-body{
+        grid-template-rows: auto auto auto;
+        background-color: red;
+    }
 
   }
   
