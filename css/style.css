@@ -10,6 +10,7 @@ body{
     background-color: #CFE8EF;
     font-family: 'Raleway','sans-serif';
     display:grid;
+    grid-template-rows: auto 86vh auto;
 
     grid-template-areas:
     "header"
@@ -23,12 +24,16 @@ nav{
     grid-area: header;
     background-color: #AED1E6;
     color: #FFFFFF;
-    font-size: 0;
+    padding-bottom: 0;
+    margin: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 1fr;
+ 
 
+}
+.navbar-toggler{
+    border: none;
 }
 
 /*Titulo de la pagina*/
