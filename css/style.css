@@ -22,7 +22,7 @@ body{
 }
 
 /*Encabezado de la pagina*/
-header{
+nav{
     grid-area: header;
     background-color: #AED1E6;
     color: #FFFFFF;
@@ -38,36 +38,26 @@ header{
 .titulo-pagina{
     font-family: 'Pacifico', cursive;
     font-size: 1.5rem;
-    width: 20%;
-}
-
-/*Menu de navegacion*/
-.barra-nav{
-    font-size: 0;
-    width: 75%;
-    text-align: right;
-    vertical-align: center;
-}
-
-/*lista de enlaces*/
-.lista-enlaces-barra{
-    display: flex;
-    justify-content:flex-end ;
-}
-
-/*item de link*/
-.item-enlace-barra{
-
-    list-style-type: none;
+    color: white;
+    
 }
 
 /*enlaces del menu*/
-.enlace-barra{
+.nav-item .nav-link{
     text-decoration: none;
     color: #FFFFFF;
     font-size: 1.25rem;
     padding: 5px;
 }
+
+
+
+
+
+
+
+
+
 /*Main*/
 main{
     grid-area: main;
