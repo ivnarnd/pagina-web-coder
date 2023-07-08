@@ -453,6 +453,19 @@ footer p{
 /*MEDIA QUERY*/
 /* Estilos para dispositivos móviles */
 @media only screen and (max-width: 767px) {
+/*Seccion de info*/
+
+.lista-contacto{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item-contacto{
+    padding: 0;
+    margin: 0;
+}
     
   }
   
