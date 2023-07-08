@@ -1,0 +1,160 @@
+/*Reseteo de estilos*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Cuerpo de la pagina*/
+body{
+    
+    background-color: #CFE8EF;
+    font-family: 'Raleway','sans-serif';
+    display:grid;
+    grid-template-rows: 7vh 86vh 7vh;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer"
+    ;
+ 
+}
+
+/*Encabezado de la pagina*/
+nav{
+    grid-area: header;
+    background-color: #AED1E6;
+    color: #FFFFFF;
+    padding-bottom: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ 
+
+}
+.navbar-toggler{
+    border: none;
+}
+
+/*Titulo de la pagina*/
+.titulo-pagina{
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    color: white;
+    
+}
+
+/*enlaces del menu*/
+.nav-item .nav-link{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    padding: 5px;
+}
+
+.offcanvas{
+    background-color: #AED1E6;
+    
+}
+
+
+
+
+
+
+
+/*Main*/
+
+main{
+    grid-area: main;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Pie de pagina*/
+footer{
+    grid-area: footer;
+    background-color: #AED1E6;
+    display:flex;
+    justify-content: center;
+   
+}
+footer p{
+
+    font-size: 1.20rem;
+   
+    color: #FFFFFF;
+}
+
+
+
+
+/*Estilos para clases generales entre las paginas*/
+.main-justificado{
+   padding-left: 5%;
+   padding-right: 5%;
+}
+.contenedor-titulo{
+    margin-top: 1rem;
+    text-align: center;
+    border-bottom: #FFFFFF 2px solid;
+    width: 100%;
+}
+.contenedor-titulo .titulo{
+    font-size: 3rem;
+    color: #FFFFFF;
+    font-family: 'Pacifico', cursive;
+}
+
+/*NOSOTROS*/
+/*Seccion de descripcion*/
+.descripcion{
+    
+    margin-top: 1rem;
+   padding: 1rem;
+    width:100%;
+    color: #000000;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+.descripcion p{
+    margin: 0;
+}
+/*seccion del staff de personas*/
+.contenedor-staff{
+    
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    color: #000000;
+    text-align: center;
+    border-radius: 20px;
+}
+
+/*Imagen del trabajador*/
+.imagen-trabajador{
+    display: inline-block;
+    font-size: 7rem;
+    background-color: #FFFFFF;
+    border-radius: 100%;
+    border: #FFFFFF 2px solid;
+}
+/*Nombre de cada trabajador h4*/
+.nombre-trabajador{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+/*Puesto de cada trabajador h5*/
+.puesto-trabajador{
+    font-family: 'pacifico', cursive;
+    font-size: 1.5rem;
+    color: #8C8888;
+}
+
