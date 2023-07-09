@@ -12,7 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:ital,wght@0,100;0,400;0,600;1,100;1,400;1,600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contacto-styles.css">
     <title>I helados</title>
 </head>
 
@@ -29,7 +29,7 @@
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2"
                 aria-labelledby="offcanvasNavbar2Label">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</h5>
+                    <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Ihelados🍦</h5>
                     <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -67,24 +67,23 @@
                 Dejanos tu consulta!
             </h4>
             <form class="formulario-contacto" action="" method="POST">
-                <label for="nombre">
+                <label for="nombre" class="nombre">
                     <p>Nombre</p>
                     <input type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre">
                 </label>
-                <label for="correo">
+                <label for="correo" class="correo">
                     <p>Correo Electronico</p>
                     <input type="email" name="correo" id="correo" placeholder="Nombre@gmail.com">
                 </label>
-                <label for="telefono">
+                <label for="telefono" class="telefono">
                     <p>N°telefono</p>
                     <input type="number" name="telefono" id="telefono" placeholder="+542213456789">
                 </label>
-                <label for="mensaje" id="mensaje-usuario">
+                <label for="mensaje" id="mensaje-usuario" class="mensaje">
                     <p>Mensaje</p>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"
-                        placeholder="Ingrese aqui su Mensaje..."></textarea>
+                    <textarea name="mensaje" id="mensaje" placeholder="Ingrese aqui su Mensaje..."></textarea>
                 </label>
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Enviar" class="boton-enviar">
 
 
             </form>
