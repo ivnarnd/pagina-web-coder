@@ -158,3 +158,18 @@ footer p{
     color: #8C8888;
 }
 
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    body{
+        grid-template-rows: auto auto auto;
+    }
+
+}
+
+/* Estilos para tablets y dispositivos con pantalla más grande */
+@media only screen and (min-width: 992px) and (max-width:1024px) {
+    body{
+        
+        grid-template-rows: auto auto auto;
+    }
+}
