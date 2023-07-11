@@ -12,11 +12,11 @@ body{
     font-family: 'Raleway','sans-serif';
     display:grid;
     grid-template-rows: 7vh 86vh 7vh;
-    grid-template-columns: 100vw;
+    grid-template-columns: 7.5vw 85vw 7.5vw;
     grid-template-areas:
-    "header"
-    "main"
-    "footer"
+    "header header header"
+    ". main ."
+    "footer footer footer"
     ;
 }
 
@@ -59,16 +59,19 @@ nav{
 }
 
 
-/*Estilos para contenedor y generales*/
-.main-justificado{
-    padding-left: 5%;
-    padding-right: 5%;
- }
+ main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
  .contenedor-titulo{
      margin-top: 1rem;
      text-align: center;
      border-bottom: #FFFFFF 2px solid;
      width: 100%;
+     height: 4rem;
  }
  .contenedor-titulo .titulo{
      font-size: 3rem;
@@ -76,73 +79,79 @@ nav{
      font-family: 'Pacifico', cursive;
  }
 /*CONTENEDOR DEL FORMULARIO*/
-.contenedor-formulario{
-    margin: 5px;
-    display: flex;
-    flex-flow: column nowrap;
-    background-color: #AED1E6;
-    border-radius: 25px;
-}
 .formulario-contacto{
-    display: grid;
-    grid-template-columns: repeat(4,25%);
-    grid-template-rows: repeat(2,1fr) 4fr 0.5fr;
-    grid-template-areas: 
-    
-    "nombre nombre correo correo"
-    "telefono telefono . ."
-    "mensaje mensaje mensaje mensaje"
-    "boton boton boton boton"
-    ;
+    background-color: #AED1E6;
+    height: 85%;
+    width: 80%;
+    border-radius: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+   
 }
 .mensaje-formulario{
     font-size: 2rem;
+    height: 3rem;
     font-family: 'Pacifico', cursive;
     color: #FFFFFF;
     text-align: center;
 }
-.nombre{
-    grid-area: nombre;
-    width: 70%;
-    color: #FFFFFF;
 
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    font-size: 1.5rem;
-}
 
-.correo{
-    grid-area: correo;
-    width: 70%;
-    color: #FFFFFF;
+.datos-personales{
+    width: 90%;
+    height: 30%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    font-size: 1.5rem;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
-.telefono{
-    grid-area: telefono;
-    width: 70%;
-    color: #FFFFFF;
+.datos{
+    width: 45%;
+    height: 45%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    flex-flow: column nowrap;
+}
+.datos input{
+    width: 100%;
+    height: 50%;
+    border-radius: 15px;
+    border: none;
+}
+.texto-formulario{
+    color: #FFFFFF;
     font-size: 1.5rem;
+    font-family: "Raleway";
+    margin: 0;
 }
 .mensaje{
-    grid-area: mensaje;
-    width: 80%;
-   
+    width: 90%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
 }
-.boton-enviar{
-    grid-area: boton;
+.mensaje p{
+    text-align: center;
+}
+.mensaje textarea{
+    resize: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+.boton{
     width: 40%;
+    height: 10%;
+    background-color: #85C7DE;
+    border-radius: 15px;
+    border: none;
     color: #FFFFFF;
 }
+
+
 /*Pie de pagina*/
 footer{
     grid-area: footer;
