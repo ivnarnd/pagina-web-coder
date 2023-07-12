@@ -103,9 +103,35 @@ nav{
     height: 250px;
     border-radius: 25px;
 }
-
-
-
+.info-sabor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.titulo-sabor{
+    font-size: 2rem;
+    font-family: "raleway";
+}
+.descripcion-sabor{
+    font-size: 1rem;
+    font-family: "raleway";
+}
+.contenedor-botones{
+    width: 50%;
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.boton-sabores{
+    width: 20%;
+    border-radius: 25px;
+    background-color: #AED1E6;
+    border: none;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
 
  /*Pie de pagina*/
 footer{
