@@ -79,8 +79,28 @@ nav{
      color: #FFFFFF;
      font-family: 'Pacifico', cursive;
  }
-
-
+ /*CONTENEDOR DE TIENDA*/
+ .contenedor-tienda{
+    background-color: red;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+ }
+ /*CONTENEDOR DE ELEMENTOS DE BUSQUEDA*/
+.cabecera-busqueda{
+    background-color: yellow;
+    width: 80%;
+}
+/*CONTENEDOR DE SECCION SABORES*/
+.seccion-sabores{
+    background-color: yellow;
+}
+/*CONTENEDOR DE SECCION FAVORITOS*/
+.seccion-favoritos{
+    background-color: yellow;
+}
 
 
 
