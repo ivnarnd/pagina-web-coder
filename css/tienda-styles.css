@@ -119,16 +119,32 @@ nav{
     justify-content: space-around;
     align-items: center;
 }
-/*CONTENEDOR DE SECCION SABORES*/
-.seccion-sabores{
-    background-color: yellow;
-}
+
 /*CONTENEDOR DE SECCION FAVORITOS*/
 .seccion-favoritos{
+    margin: 1rem;
     background-color: yellow;
+    width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.contenedor-sabores-tienda{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
-
+/*CONTENEDOR DE SECCION SABORES*/
+.seccion-sabores{
+    margin: 1rem;
+    width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: yellow;
+}
 
 
  
