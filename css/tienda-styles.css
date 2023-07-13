@@ -8,6 +8,7 @@
 /*Cuerpo de la pagina*/
 body{
     
+    
     background-color: #CFE8EF;
     font-family: 'Raleway','sans-serif';
     display:grid;
@@ -79,60 +80,12 @@ nav{
      font-family: 'Pacifico', cursive;
  }
 
-/*CONTENEDOR DE SABORES*/
-.contenedor-sabores{
-    margin: 1rem 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-}
 
-.contenedor-sabor{
-    background-color: #FFFFFF;
-    display: flex;
-    width: 100%;
-    margin: 1rem 0;
-}
-.contenedor-img{
-    padding: 1rem;
-  
-}
-.contenedor-img img{
-    width: 300px ;
-    height: 250px;
-    border-radius: 25px;
-}
-.info-sabor{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.titulo-sabor{
-    font-size: 2rem;
-    font-family: "raleway";
-}
-.descripcion-sabor{
-    font-size: 1rem;
-    font-family: "raleway";
-}
-.contenedor-botones{
-    width: 50%;
-    display: flex;
-    flex-flow:row nowrap;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.boton-sabores{
-    width: 20%;
-    border-radius: 25px;
-    background-color: #AED1E6;
-    border: none;
-    color: #FFFFFF;
-    font-size: 1.5rem;
-}
 
+
+
+
+ 
  /*Pie de pagina*/
 footer{
     grid-area: footer;
