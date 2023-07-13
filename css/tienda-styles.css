@@ -93,6 +93,32 @@ nav{
     background-color: yellow;
     width: 80%;
 }
+/*CONTENEDOR DE BARRA DE BUSQUEDA*/
+.barra-busqueda{
+    background-color: blue;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+/*FORMULARIO DE LA BARRA DE BUSQUEDA*/
+.barra-busqueda-form{
+    background-color: green;
+}
+/*BOTON DE CARRITO*/
+.barra-busqueda-boton{
+    background-color: green;
+}
+/*CONTENEDOR DE FILTRO DE PESO*/
+.filtro-peso{
+    background-color: blue;
+    
+}
+.lista-peso{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
 /*CONTENEDOR DE SECCION SABORES*/
 .seccion-sabores{
     background-color: yellow;
