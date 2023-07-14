@@ -92,6 +92,7 @@ nav{
 .cabecera-busqueda{
     background-color: yellow;
     width: 80%;
+    height: 15%;
 }
 /*CONTENEDOR DE BARRA DE BUSQUEDA*/
 .barra-busqueda{
@@ -125,21 +126,32 @@ nav{
     margin: 1rem;
     background-color: yellow;
     width: 90%;
+    height: 30%;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
 }
 .contenedor-sabores-tienda{
     width: 100%;
+    height: 90%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
-
+.sabor-item{
+    background-color: green;
+    width: 31%;
+    height: 80%;
+}
+.imagen-sabor-tienda{
+    width: 50%;
+    height: 60%;
+}
 /*CONTENEDOR DE SECCION SABORES*/
 .seccion-sabores{
     margin: 1rem;
     width: 90%;
+    height: 60%;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
