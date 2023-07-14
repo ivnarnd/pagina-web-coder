@@ -1,0 +1,22 @@
+{
+  "name": "pagina-web-coder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivnarnd/pagina-web-coder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivnarnd/pagina-web-coder/issues"
+  },
+  "homepage": "https://github.com/ivnarnd/pagina-web-coder#readme",
+  "devDependencies": {
+    "sass": "^1.63.6"
+  }
+}
