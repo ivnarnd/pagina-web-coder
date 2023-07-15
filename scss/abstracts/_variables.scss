@@ -1,0 +1,18 @@
+/*Colores de la pagina*/
+$sub-text: rgba(160, 196, 226, 1);
+$component-color: rgba(174, 209, 230, 1);
+$columbia-blue-2: rgba(198, 219, 240, 1);
+$body-color: rgba(207, 232, 239, 1);
+$elements-color: rgba(133, 199, 222, 1);
+$text-white-color:rgb(255, 255, 255);
+
+/*fuente de la pagina*/
+$font-stack: ('Raleway', 'Pacifico', sans-serif,cursive);
+
+//Puntos de quiebre
+$breakpoints: (
+  'small': 767px,
+  'medium': 992px,
+  'large': 1200px,
+);
+
