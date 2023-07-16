@@ -11,8 +11,8 @@ $font-stack: ('Raleway', 'Pacifico', sans-serif,cursive);
 
 //Puntos de quiebre
 $breakpoints: (
-  'small': 767px,
-  'medium': 992px,
-  'large': 1200px,
+  'medium': (min-width: 800px),
+  'large': (min-width: 1000px),
+  'huge': (min-width: 1200px),
 );
 
