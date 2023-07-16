@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass": "node-sass --incluide-path scss scss/style.scss css/style.css",
+    "watch-sass": "nodemon -e scss -x \"npm run build-sass\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ivnarnd/pagina-web-coder.git",
-    "build-sass":"node-sass --incluide-path scss scss/style.scss css/style.css",
-    "watch-sass":"nodemon -e scss -x \"npm run build-sass\""
+    "url": "git+https://github.com/ivnarnd/pagina-web-coder.git"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/ivnarnd/pagina-web-coder#readme",
   "devDependencies": {
+    "node-sass": "^9.0.0",
     "sass": "^1.63.6"
   }
 }
