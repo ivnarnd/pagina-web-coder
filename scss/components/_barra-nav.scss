@@ -1,0 +1,38 @@
+
+nav{
+    grid-area: header;
+    background-color: $component-color;
+    color: $text-white-color;
+    padding-bottom: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .navbar-toggler{
+        border: none;
+    }
+    .titulo-pagina{
+        font-family: $font-title, cursive;
+        font-size: 1.5rem;
+        color: $text-white-color;
+    }
+}
+
+
+/*Titulo de la pagina*/
+
+
+/*enlaces del menu*/
+.nav-item{
+    .nav-link{
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 1.25rem;
+        padding: 5px;
+    }
+}
+
+.offcanvas{
+    background-color: #AED1E6;
+    
+}
