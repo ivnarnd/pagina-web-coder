@@ -39,3 +39,12 @@ nav {
 
 .offcanvas {
   background-color: #AED1E6; }
+
+footer {
+  grid-area: footer;
+  background-color: #aed1e6;
+  text-align: center;
+  padding: 5px; }
+  footer p {
+    font-size: 1.20rem;
+    color: white; }
