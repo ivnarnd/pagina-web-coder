@@ -5,6 +5,14 @@
   padding: 0;
   box-sizing: border-box; }
 
+body {
+  background-color: #cfe8ef;
+  font-family: "Raleway", "sans-serif";
+  display: grid;
+  grid-template-rows: 7vh 86vh 7vh;
+  grid-template-columns: 7.5vw 85vw 7.5vw;
+  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+
 nav {
   grid-area: header;
   background-color: #aed1e6;
