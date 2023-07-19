@@ -1,0 +1,22 @@
+
+
+/*Seccion de bienvenida*/
+.intro{
+    
+    background-color: $text-white-color;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p{
+        font-size: 1.5rem;
+    }
+}
+/*titulos*/
+.titulo{
+    font-family:  $font-title, cursive;
+    font-size: 3rem;
+    color:$sub-text;
+    /* font-family: 'Raleway', sans-serif; */
+}

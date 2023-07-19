@@ -1,0 +1,21 @@
+/*Banner de inicio*/
+#banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100vw;
+    background-image:url("../images/helados.jpg");
+    background-repeat: no-repeat;
+    background-position-y:90%;
+    background-size:cover;
+    font-family: $font-title, cursive;
+    color: $text-white-color;
+    
+    text-align: center;
+     h2{
+        font-size: 6rem;
+        font-weight: 300;
+   
+    }
+}

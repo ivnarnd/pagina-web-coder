@@ -1,9 +1,17 @@
 @charset  "utf-8";
 // 1.Configuracion
-
+/*variables del proyecto*/
 @import  'abstracts/variables';
+/*reseteo de estilos */
 @import 'base/reset';
+/*grid de la pagina*/
 @import 'layout/grid';
-@import 'components/barra-nav';
-@import 'components/footer';
-@import 'components/titulo-secciones';
+/*pagina principal de la pagina*/
+@import './pages/home';
+/*pagina nosotros*/
+@import './pages/nosotros';
+/*pagina sabores*/
+@import './pages/sabores';
+/*pagina contacto */
+@import './pages/contacto';
+@import './pages/tienda';
