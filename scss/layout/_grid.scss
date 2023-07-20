@@ -12,3 +12,11 @@ body{
     "footer footer footer"
     ;
 }
+.body-paginas{
+    @extend body;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header header header"
+    ". main ."
+    "footer footer footer"
+    ;
+}
