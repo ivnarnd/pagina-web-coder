@@ -1,16 +1,4 @@
-
- .contenedor-titulo{
-     margin-top: 1rem;
-     text-align: center;
-     border-bottom: #FFFFFF 2px solid;
-     width: 100%;
-     height: 4rem;
- }
- .contenedor-titulo .titulo{
-     font-size: 3rem;
-     color: #FFFFFF;
-     font-family: 'Pacifico', cursive;
- }
+@import '../components/barra_busqueda';
  /*CONTENEDOR DE TIENDA*/
  .contenedor-tienda{
 
@@ -20,19 +8,6 @@
     align-items: center;
     justify-content: center;
  }
- /*CONTENEDOR DE ELEMENTOS DE BUSQUEDA*/
-.cabecera-busqueda{
-
-    width: 80%;
-    height: 15%;
-}
-/*CONTENEDOR DE BARRA DE BUSQUEDA*/
-.barra-busqueda{
-
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-}
 
 
 

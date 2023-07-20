@@ -436,17 +436,42 @@ footer p {
   border: none;
   color: #FFFFFF; }
 
-.contenedor-titulo {
-  margin-top: 1rem;
-  text-align: center;
-  border-bottom: #FFFFFF 2px solid;
+/*CONTENEDOR DE ELEMENTOS DE BUSQUEDA*/
+.cabecera-busqueda {
   width: 100%;
-  height: 4rem; }
+  height: 15%; }
 
-.contenedor-titulo .titulo {
-  font-size: 3rem;
-  color: #FFFFFF;
-  font-family: 'Pacifico', cursive; }
+/*CONTENEDOR DE BARRA DE BUSQUEDA*/
+.barra-busqueda {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly; }
+  .barra-busqueda .barra-busqueda-form {
+    background-color: white;
+    width: 60%;
+    border-radius: 25px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center; }
+    .barra-busqueda .barra-busqueda-form .caja-busqueda {
+      width: 90%;
+      border: none;
+      border-radius: 25px; }
+      .barra-busqueda .barra-busqueda-form .caja-busqueda:focus {
+        border: none; }
+    .barra-busqueda .barra-busqueda-form .btn-buscar {
+      width: 8%;
+      background-color: white;
+      border: none;
+      font-size: 1.5rem;
+      border-radius: 25px;
+      color: #a0c4e2; }
+  .barra-busqueda .barra-btn-carrito {
+    background-color: inherit;
+    border: none;
+    font-size: 1.5rem;
+    width: 20%; }
 
 /*CONTENEDOR DE TIENDA*/
 .contenedor-tienda {
@@ -455,17 +480,6 @@ footer p {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center; }
-
-/*CONTENEDOR DE ELEMENTOS DE BUSQUEDA*/
-.cabecera-busqueda {
-  width: 80%;
-  height: 15%; }
-
-/*CONTENEDOR DE BARRA DE BUSQUEDA*/
-.barra-busqueda {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly; }
 
 .lista-peso {
   display: flex;
