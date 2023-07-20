@@ -1,0 +1,41 @@
+.radio-inputs {
+
+    display: flex;
+    border-radius: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem;
+    width: 100%;
+    height: 300px;
+    
+  
+  .radio {
+    border-radius: 100%;
+    width: 30%;
+    height: 60%;
+    text-align: center;
+    input {
+        display: none;
+    }
+    .name {
+        font-family: $font-title;
+        font-size: 1.5rem;
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 80%;
+        border-radius: 100%;
+        border: none;
+        padding: .5rem 0;
+        color:$text-black-color;
+        transition: all .15s ease-in-out;
+    }
+   } 
+  input:checked + .name {
+    background-color: #fff;
+    font-weight: 600;
+  }
+
+}
