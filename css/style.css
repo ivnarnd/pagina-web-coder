@@ -523,41 +523,64 @@ footer p {
   align-items: center;
   justify-content: center; }
 
-.lista-peso {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: center; }
+.sub-titulo {
+  font-family: "Pacifico";
+  font-size: 2.25rem;
+  color: white; }
 
 /*CONTENEDOR DE SECCION FAVORITOS*/
-.seccion-favoritos {
+.tienda-seccion {
   margin: 1rem;
-  width: 90%;
-  height: 30%;
+  width: 100%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center; }
-
-.contenedor-sabores-tienda {
-  width: 100%;
-  height: 90%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around; }
+  .tienda-seccion .contenedor-sabores-tienda {
+    border-radius: 25px;
+    background-color: white;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly; }
 
 .sabor-item {
-  width: 31%;
-  height: 80%; }
-
-.imagen-sabor-tienda {
-  width: 50%;
-  height: 60%; }
-
-/*CONTENEDOR DE SECCION SABORES*/
-.seccion-sabores {
-  margin: 1rem;
-  width: 90%;
-  height: 60%;
+  margin-top: 1rem;
+  background-color: #aed1e6;
+  border-radius: 25px;
   display: flex;
   flex-flow: column nowrap;
-  align-items: center; }
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 300px; }
+  .sabor-item .sabor-item-img {
+    width: 300px;
+    height: 150px;
+    border-radius: 25px; }
+  .sabor-item .sabor-item-detalle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .sabor-item .sabor-item-detalle h4 {
+      color: white;
+      font-family: "Raleway"; }
+
+/*
+                <section class="detalle-btns">
+                                <button class="boton-sabores" alt="boton de añadir a cesta">✚</button>
+                                <button class="boton-sabores" alt="boton de añadir a favoritos">★</button>
+                            </section>
+*/
+.detalle-btns {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between; }
+  .detalle-btns .boton-sabores {
+    color: #85c7de;
+    width: 40%;
+    background-color: white; }
