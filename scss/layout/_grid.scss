@@ -20,3 +20,10 @@ body{
     "footer footer footer"
     ;
 }
+.body-contacto{
+    @extend body;
+   grid-template-areas: 
+   "header header header"
+   ". main ."
+   "footer footer footer";
+}
