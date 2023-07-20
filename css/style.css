@@ -553,13 +553,14 @@ footer p {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  width: 400px;
-  height: 300px; }
+  width: 32%;
+  height: 400px; }
   .sabor-item .sabor-item-img {
-    width: 300px;
-    height: 150px;
+    width: 90%;
+    height: 50%;
     border-radius: 25px; }
   .sabor-item .sabor-item-detalle {
+    margin-top: 0.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -568,12 +569,6 @@ footer p {
       color: white;
       font-family: "Raleway"; }
 
-/*
-                <section class="detalle-btns">
-                                <button class="boton-sabores" alt="boton de añadir a cesta">✚</button>
-                                <button class="boton-sabores" alt="boton de añadir a favoritos">★</button>
-                            </section>
-*/
 .detalle-btns {
   width: 100%;
   display: flex;
