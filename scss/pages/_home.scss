@@ -19,35 +19,7 @@
 #banner{
     display: none;
 }
-/*ENLACES A DEMAS PAGINAS*/
-.seccion-enlaces{
-    display: flex;
-    background-color: $text-white-color;
-    
-}
-.lista-enlaces{
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    list-style-type: none;
-    display: flex;
-    flex-flow: column wrap;
-}
-.lista-enlaces-item{
-    font-family: pacifico;
-    text-align: center;
-    color: $text-white-color;
-    background-color: $component-color;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top:2px dotted $text-white-color;
-}
-.lista-enlaces-item a{
-    text-decoration: none;
-    color: inherit;
-}
+
 /*Seccion de info*/
 .lista-contacto{
     padding: 0;
