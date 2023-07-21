@@ -77,10 +77,11 @@ main {
   text-align: center; }
   #banner h2 {
     font-size: 6rem;
-    font-weight: 300; }
+    font-weight: 400; }
 
 /*Seccion de bienvenida*/
 .intro {
+  width: 100%;
   background-color: white;
   text-align: center;
   display: flex;
@@ -100,6 +101,7 @@ main {
 /*Seccion de info*/
 #info {
   height: 30%;
+  width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column; }
@@ -146,9 +148,6 @@ main {
   width: 25px;
   height: 25px; }
 
-.seccion-enlaces {
-  display: none; }
-
 footer {
   grid-area: footer;
   background-color: #aed1e6;
@@ -166,30 +165,6 @@ footer {
   /*BANNER*/
   #banner {
     display: none; }
-  /*ENLACES A DEMAS PAGINAS*/
-  .seccion-enlaces {
-    display: flex;
-    background-color: white; }
-  .lista-enlaces {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    list-style-type: none;
-    display: flex;
-    flex-flow: column wrap; }
-  .lista-enlaces-item {
-    font-family: pacifico;
-    text-align: center;
-    color: white;
-    background-color: #aed1e6;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top: 2px dotted white; }
-  .lista-enlaces-item a {
-    text-decoration: none;
-    color: inherit; }
   /*Seccion de info*/
   .lista-contacto {
     padding: 0;
