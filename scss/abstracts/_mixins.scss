@@ -1,0 +1,6 @@
+@mixin caja-flex($direction,$main,$cross){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $main;
+    justify-content: $cross;
+}

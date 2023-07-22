@@ -1,15 +1,12 @@
 @charset "UTF-8";
-/*variables del proyecto*/
 /*Colores de la pagina*/
 /*font-size*/
 /*fuente de la pagina*/
-/*reseteo de estilos */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-/*grid de la pagina*/
 body, .body-paginas, .body-contacto {
   background-color: #cfe8ef;
   font-family: "Raleway", "sans-serif";
@@ -25,7 +22,6 @@ body, .body-paginas, .body-contacto {
 .body-contacto {
   grid-template-areas: "header header header" ". main ." "footer footer footer"; }
 
-/*pagina principal de la pagina*/
 nav {
   grid-area: header;
   background-color: #aed1e6;
@@ -213,7 +209,6 @@ footer {
     text-decoration: none;
     color: inherit; } }
 
-/*pagina nosotros*/
 .contenedor-titulo {
   margin-top: 1rem;
   text-align: center;
@@ -277,7 +272,6 @@ footer {
   body, .body-paginas, .body-contacto {
     grid-template-rows: auto auto auto; } }
 
-/*pagina sabores*/
 .contenedor-titulo {
   margin-top: 1rem;
   text-align: center;
@@ -352,7 +346,6 @@ footer p {
   font-size: 1.20rem;
   color: #FFFFFF; }
 
-/*pagina contacto */
 /*CONTENEDOR DEL FORMULARIO*/
 .formulario-contacto {
   background-color: #AED1E6;
@@ -450,6 +443,8 @@ footer p {
       border: none;
       border-radius: 25px; }
       .barra-busqueda .barra-busqueda-form .caja-busqueda:focus {
+        border: none; }
+      .barra-busqueda .barra-busqueda-form .caja-busqueda:active {
         border: none; }
     .barra-busqueda .barra-busqueda-form .btn-buscar {
       width: 10%;

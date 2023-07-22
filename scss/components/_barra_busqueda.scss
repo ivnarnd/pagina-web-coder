@@ -22,6 +22,9 @@
             &:focus{
                 border: none;
             }
+            &:active{
+                border: none;
+            }
         }
         .btn-buscar{
             width:10%;
