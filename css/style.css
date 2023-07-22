@@ -1,15 +1,15 @@
 @charset "UTF-8";
-/*Colores de la pagina*/
-/*font-size*/
-/*fuente de la pagina*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
+/*Colores de la pagina*/
+/*font-size*/
+/*fuente de la pagina*/
 body, .body-paginas, .body-contacto {
   background-color: #cfe8ef;
-  font-family: "Raleway", "sans-serif";
+  font-family: "Raleway", sans-serif;
   display: grid;
   grid-template-rows: 7vh 86vh 7vh;
   grid-template-columns: 7.5vw 85vw 7.5vw;
@@ -27,10 +27,7 @@ nav {
   background-color: #aed1e6;
   color: white;
   padding-bottom: 0;
-  margin: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
+  margin: 0; }
   nav .navbar-toggler {
     border: none; }
   nav .titulo-pagina {
@@ -38,7 +35,6 @@ nav {
     font-size: 1.5rem;
     color: white; }
 
-/*Titulo de la pagina*/
 /*enlaces del menu*/
 .nav-item .nav-link {
   text-decoration: none;
@@ -51,98 +47,11 @@ nav {
 
 main {
   grid-area: main;
-  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-
-/*Banner de inicio*/
-#banner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50%;
-  width: 100vw;
-  background-image: url("../images/helados.jpg");
-  background-repeat: no-repeat;
-  background-position-y: 90%;
-  background-size: cover;
-  font-family: "Pacifico", cursive;
-  color: white;
-  text-align: center; }
-  #banner h2 {
-    font-size: 6rem;
-    font-weight: 400; }
-
-/*Seccion de bienvenida*/
-.intro {
-  width: 100%;
-  background-color: white;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-  .intro p {
-    font-size: 1.5rem; }
-
-/*titulos*/
-.titulo {
-  font-family: "Pacifico", cursive;
-  font-size: 3rem;
-  color: #a0c4e2;
-  /* font-family: 'Raleway', sans-serif; */ }
-
-/*Seccion de info*/
-#info {
-  height: 30%;
-  width: 100%;
-  text-align: center;
-  display: flex;
-  flex-direction: column; }
-
-.lista-contacto {
-  display: flex;
-  flex-wrap: nowwrap;
-  justify-content: space-around; }
-
-/*item de la lista de contacto*/
-.item-contacto {
-  flex: 200px;
   flex-wrap: nowrap;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  list-style-type: none;
-  margin-top: 2rem; }
-
-/*iconos de los items de contacto*/
-.icono-item-contacto {
-  font-size: 2.5rem; }
-
-/*titulo de los items de contacto*/
-.titulo-item-contacto {
-  font-family: 'Pacifico', cursive;
-  font-size: 2.5rem;
-  font-weight: lighter;
-  color: white; }
-
-/*texto debajo del item*/
-.item-contacto p {
-  font-size: 1.5rem; }
-
-/*item de redes*/
-.item-redes {
-  display: inline-block;
-  list-style-type: none;
-  padding: 5px; }
-
-/*Imagen de los iconos de redes*/
-.logo-redes {
-  width: 25px;
-  height: 25px; }
+  align-items: center; }
 
 footer {
   grid-area: footer;
@@ -153,24 +62,106 @@ footer {
     font-size: 1.20rem;
     color: white; }
 
-/*MEDIA QUERY*/
+/*Banner de inicio*/
+#banner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 100vw;
+  background-image: url("../images/helados.jpg");
+  background-repeat: no-repeat;
+  background-position-y: 90%;
+  background-size: cover;
+  font-family: "Pacifico", cursive, cursive;
+  color: white;
+  text-align: center; }
+  #banner h2 {
+    font-size: 6rem;
+    font-weight: 400; }
+
+/*Seccion de bienvenida*/
+.intro {
+  padding: 1rem;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center; }
+  .intro p {
+    font-size: 1.5rem; }
+
+.titulo {
+  font-family: "Pacifico", cursive;
+  font-size: 3rem;
+  color: #a0c4e2; }
+
+/*Seccion de info*/
+#info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  #info .lista-contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch; }
+
+.item-contacto {
+  list-style-type: none;
+  flex: 200px;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center; }
+  .item-contacto p {
+    font-size: 1.5rem; }
+  .item-contacto .icono-item-contacto {
+    font-size: 2.25rem; }
+  .item-contacto .titulo-item-contacto {
+    font-family: "Pacifico", cursive;
+    font-size: 2.25rem;
+    font-weight: lighter;
+    color: white; }
+  .item-contacto ul .item-redes {
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px; }
+    .item-contacto ul .item-redes .logo-redes {
+      width: 25px;
+      height: 25px; }
+
 /* Estilos para dispositivos móviles */
 @media only screen and (max-width: 768px) {
-  .index-body, body, .body-paginas, .body-contacto {
+  body, .body-paginas, .body-contacto {
+    margin: 0;
+    padding: 0;
     grid-template-rows: auto auto auto; }
-  /*BANNER*/
   #banner {
     display: none; }
-  /*Seccion de info*/
-  .lista-contacto {
+  #info .lista-contacto {
     padding: 0;
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center; }
-  .item-contacto {
-    padding: 0;
-    margin: 0; }
+    #info .lista-contacto .item-contacto {
+      padding: 0;
+      margin: 0; }
   footer {
     position: relative;
     bottom: 0; } }
@@ -178,381 +169,4 @@ footer {
 /* Estilos para tablets y dispositivos con pantalla más grande */
 @media only screen and (min-width: 769px) and (max-width: 992) {
   .index-body {
-    grid-template-rows: auto auto auto; }
-  /*ENLACES A DEMAS PAGINAS*/
-  .seccion-enlaces {
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    justify-content: center; }
-  .lista-enlaces {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    list-style-type: none;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between; }
-  .lista-enlaces-item {
-    font-family: pacifico;
-    text-align: center;
-    color: white;
-    background-color: #aed1e6;
-    height: 95px;
-    width: 24%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top: 2px dotted white; }
-  .lista-enlaces-item a {
-    text-decoration: none;
-    color: inherit; } }
-
-.contenedor-titulo {
-  margin-top: 1rem;
-  text-align: center;
-  border-bottom: #FFFFFF 2px solid;
-  width: 100%;
-  height: 4rem; }
-  .contenedor-titulo .titulo {
-    font-size: 3rem;
-    color: #FFFFFF;
-    font-family: 'Pacifico', cursive; }
-
-/*Seccion de descripcion*/
-.descripcion {
-  margin-top: 1rem;
-  padding: 1rem;
-  width: 100%;
-  color: #000000;
-  text-align: center;
-  background-color: #FFFFFF;
-  border-radius: 20px; }
-
-.descripcion p {
-  margin: 0; }
-
-/*seccion del staff de personas*/
-.contenedor-staff {
-  padding: 1rem;
-  margin-top: 1rem;
-  width: 100%;
-  color: #000000;
-  text-align: center;
-  border-radius: 20px; }
-
-/*Imagen del trabajador*/
-.imagen-trabajador {
-  display: inline-block;
-  font-size: 7rem;
-  background-color: #FFFFFF;
-  border-radius: 100%;
-  border: #FFFFFF 2px solid; }
-
-/*Nombre de cada trabajador h4*/
-.nombre-trabajador {
-  font-family: 'Raleway', sans-serif;
-  font-size: 2rem;
-  color: #FFFFFF; }
-
-/*Puesto de cada trabajador h5*/
-.puesto-trabajador {
-  font-family: 'pacifico', cursive;
-  font-size: 1.5rem;
-  color: #8C8888; }
-
-/* Estilos para dispositivos móviles */
-@media only screen and (max-width: 768px) {
-  body, .body-paginas, .body-contacto {
     grid-template-rows: auto auto auto; } }
-
-/* Estilos para tablets y dispositivos con pantalla más grande */
-@media only screen and (min-width: 992px) and (max-width: 1024px) {
-  body, .body-paginas, .body-contacto {
-    grid-template-rows: auto auto auto; } }
-
-.contenedor-titulo {
-  margin-top: 1rem;
-  text-align: center;
-  border-bottom: #FFFFFF 2px solid;
-  width: 100%;
-  height: 4rem; }
-
-.contenedor-titulo .titulo {
-  font-size: 3rem;
-  color: #FFFFFF;
-  font-family: 'Pacifico', cursive; }
-
-/*CONTENEDOR DE SABORES*/
-.contenedor-sabores {
-  margin: 1rem 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-flow: column nowrap; }
-
-.contenedor-sabor {
-  background-color: #FFFFFF;
-  display: flex;
-  width: 100%;
-  margin: 1rem 0; }
-
-.contenedor-img {
-  padding: 1rem; }
-
-.contenedor-img img {
-  width: 300px;
-  height: 250px;
-  border-radius: 25px; }
-
-.info-sabor {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-
-.titulo-sabor {
-  font-size: 2rem;
-  font-family: "raleway"; }
-
-.descripcion-sabor {
-  font-size: 1rem;
-  font-family: "raleway"; }
-
-.contenedor-botones {
-  width: 50%;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: space-evenly; }
-
-.boton-sabores {
-  width: 20%;
-  border-radius: 25px;
-  background-color: #AED1E6;
-  border: none;
-  color: #FFFFFF;
-  font-size: 1.5rem; }
-
-/*Pie de pagina*/
-footer {
-  grid-area: footer;
-  background-color: #AED1E6;
-  text-align: center;
-  padding: 5px; }
-
-footer p {
-  font-size: 1.20rem;
-  color: #FFFFFF; }
-
-/*CONTENEDOR DEL FORMULARIO*/
-.formulario-contacto {
-  background-color: #AED1E6;
-  height: 85%;
-  width: 80%;
-  border-radius: 25px;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  justify-content: center; }
-
-.mensaje-formulario {
-  font-size: 2rem;
-  height: 3rem;
-  font-family: 'Pacifico', cursive;
-  color: #FFFFFF;
-  text-align: center; }
-
-.datos-personales {
-  width: 90%;
-  height: 30%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between; }
-
-.datos {
-  width: 45%;
-  height: 45%;
-  display: flex;
-  flex-flow: column nowrap; }
-
-.datos input {
-  width: 100%;
-  height: 50%;
-  border-radius: 15px;
-  border: none; }
-
-.texto-formulario {
-  color: #FFFFFF;
-  font-size: 1.5rem;
-  font-family: "Raleway";
-  margin: 0; }
-
-.mensaje {
-  width: 90%;
-  height: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-
-.mensaje p {
-  text-align: center; }
-
-.mensaje textarea {
-  resize: none;
-  border: none;
-  width: 100%;
-  height: 100%; }
-
-.boton {
-  width: 40%;
-  height: 10%;
-  background-color: #85C7DE;
-  border-radius: 15px;
-  border: none;
-  color: #FFFFFF; }
-
-/*CONTENEDOR DE ELEMENTOS DE BUSQUEDA*/
-.cabecera-busqueda {
-  width: 100%;
-  height: 15%;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center; }
-
-/*CONTENEDOR DE BARRA DE BUSQUEDA*/
-.barra-busqueda {
-  margin: 1rem;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  width: 100%; }
-  .barra-busqueda .barra-busqueda-form {
-    background-color: white;
-    width: 70%;
-    border-radius: 25px;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center; }
-    .barra-busqueda .barra-busqueda-form .caja-busqueda {
-      width: 90%;
-      border: none;
-      border-radius: 25px; }
-      .barra-busqueda .barra-busqueda-form .caja-busqueda:focus {
-        border: none; }
-      .barra-busqueda .barra-busqueda-form .caja-busqueda:active {
-        border: none; }
-    .barra-busqueda .barra-busqueda-form .btn-buscar {
-      width: 10%;
-      background-color: white;
-      border: none;
-      font-size: 1.5rem;
-      border-radius: 25px;
-      color: #a0c4e2; }
-  .barra-busqueda .barra-btn-carrito {
-    background-color: inherit;
-    border: none;
-    font-size: 1.5rem;
-    width: 10%; }
-
-.radio-inputs {
-  margin-top: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.25rem;
-  width: 100%;
-  height: 100px; }
-  .radio-inputs .radio {
-    border-radius: 100%;
-    width: 150px;
-    height: 100%;
-    text-align: center; }
-    .radio-inputs .radio input {
-      display: none; }
-    .radio-inputs .radio .name {
-      font-family: "Pacifico";
-      font-size: 1.5rem;
-      display: flex;
-      cursor: pointer;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-      width: 100%;
-      border-radius: 100%;
-      border: none;
-      padding: .5rem 0;
-      color: black;
-      transition: all .15s ease-in-out; }
-  .radio-inputs input:checked + .name {
-    background-color: #fff;
-    font-weight: 600; }
-
-/*CONTENEDOR DE TIENDA*/
-.contenedor-tienda {
-  width: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center; }
-
-.sub-titulo {
-  font-family: "Pacifico";
-  font-size: 2.25rem;
-  color: white; }
-
-/*CONTENEDOR DE SECCION FAVORITOS*/
-.tienda-seccion {
-  margin: 1rem;
-  width: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center; }
-  .tienda-seccion .contenedor-sabores-tienda {
-    border-radius: 25px;
-    background-color: white;
-    width: 100%;
-    padding: 1rem;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-evenly; }
-
-.sabor-item {
-  margin-top: 1rem;
-  background-color: #aed1e6;
-  border-radius: 25px;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
-  width: 32%;
-  height: 400px; }
-  .sabor-item .sabor-item-img {
-    width: 90%;
-    height: 50%;
-    border-radius: 25px; }
-  .sabor-item .sabor-item-detalle {
-    margin-top: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-    .sabor-item .sabor-item-detalle h4 {
-      color: white;
-      font-family: "Raleway"; }
-
-.detalle-btns {
-  width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: space-between; }
-  .detalle-btns .boton-sabores {
-    color: #85c7de;
-    width: 40%;
-    background-color: white; }

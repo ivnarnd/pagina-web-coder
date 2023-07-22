@@ -1,22 +1,19 @@
 
-
 /*Seccion de bienvenida*/
 .intro{
+    padding: 1rem;
     width: 100%;
     background-color: $text-white-color;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flexbox( flex, column, nowrap, center, center);
     p{
-        font-size: 1.5rem;
+        font-size: $font-size-text;
     }
 }
-/*titulos*/
+
 .titulo{
-    font-family:  $font-title, cursive;
-    font-size: 3rem;
+    font-family:  $font-title;
+    font-size: $font-size-title;
     color:$sub-text;
-    /* font-family: 'Raleway', sans-serif; */
+    
 }

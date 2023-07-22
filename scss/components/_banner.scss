@@ -1,8 +1,6 @@
 /*Banner de inicio*/
 #banner{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexbox(flex,  row, nowrap, center, center);
     height: 50%;
     width: 100vw;
     background-image:url("../images/helados.jpg");
@@ -11,7 +9,6 @@
     background-size:cover;
     font-family: $font-title, cursive;
     color: $text-white-color;
-    
     text-align: center;
      h2{
         font-size: $font-size-title-page;

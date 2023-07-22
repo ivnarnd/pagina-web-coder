@@ -1,6 +1,7 @@
-@mixin caja-flex($direction,$main,$cross){
-    display: flex;
+@mixin flexbox($display: flex, $direction: row, $wrap: nowrap, $justify: flex-start, $align-items: stretch) {
+    display: $display;
     flex-direction: $direction;
-    align-items: $main;
-    justify-content: $cross;
-}
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align-items;
+  }

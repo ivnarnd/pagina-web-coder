@@ -5,21 +5,18 @@ nav{
     color: $text-white-color;
     padding-bottom: 0;
     margin: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+
     .navbar-toggler{
         border: none;
     }
     .titulo-pagina{
-        font-family: $font-title, cursive;
+        font-family: $font-title;
         font-size: 1.5rem;
         color: $text-white-color;
     }
 }
 
 
-/*Titulo de la pagina*/
 
 
 /*enlaces del menu*/

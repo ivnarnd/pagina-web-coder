@@ -1,20 +1,18 @@
 @charset  "utf-8";
 // 1.Configuracion
-//variables del proyecto
-@import  'abstracts/variables';
-//mixins del proyecto
-@import 'abstracts/mixins';
-// /*reseteo de estilos */
+//bases
 @import 'base/reset';
-// /*grid de la pagina*/
+//abstract
+@import  'abstracts/variables';
+@import 'abstracts/mixins';
+
+//layout principal del sitio
 @import 'layout/grid';
+@import 'layout/barra-nav';
+@import 'layout/main';
+@import 'layout/footer';
 // /*pagina principal de la pagina*/
 @import './pages/home';
-// /*pagina nosotros*/
-@import './pages/nosotros';
-// /*pagina sabores*/
-@import './pages/sabores';
-// /*pagina contacto */
-@import './pages/contacto';
-//pagina tienda
-@import './pages/tienda';
+
+//medias
+@import './layout/media';
