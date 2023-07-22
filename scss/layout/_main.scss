@@ -1,5 +1,4 @@
 main{
     grid-area: main;
-
     @include flexbox(flex, column,  nowrap, center,center)
 }

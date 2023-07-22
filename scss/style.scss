@@ -6,13 +6,14 @@
 @import  'abstracts/variables';
 @import 'abstracts/mixins';
 
-//layout principal del sitio
+/*layout del sitio*/
 @import 'layout/grid';
 @import 'layout/barra-nav';
 @import 'layout/main';
 @import 'layout/footer';
-// /*pagina principal de la pagina*/
+/*pagina principal del sitio*/
 @import './pages/home';
-
+/*pagina de nosotros*/
+@import './pages/nosotros';
 //medias
 @import './layout/media';

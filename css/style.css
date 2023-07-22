@@ -7,7 +7,8 @@
 /*Colores de la pagina*/
 /*font-size*/
 /*fuente de la pagina*/
-body, .body-paginas, .body-contacto {
+/*layout del sitio*/
+body, .body-ajustable {
   background-color: #cfe8ef;
   font-family: "Raleway", sans-serif;
   display: grid;
@@ -15,11 +16,7 @@ body, .body-paginas, .body-contacto {
   grid-template-columns: 7.5vw 85vw 7.5vw;
   grid-template-areas: "header header header" "main main main" "footer footer footer"; }
 
-.body-paginas {
-  grid-template-rows: auto auto auto;
-  grid-template-areas: "header header header" ". main ." "footer footer footer"; }
-
-.body-contacto {
+.body-ajustable {
   grid-template-areas: "header header header" ". main ." "footer footer footer"; }
 
 nav {
@@ -62,6 +59,7 @@ footer {
     font-size: 1.20rem;
     color: white; }
 
+/*pagina principal del sitio*/
 /*Banner de inicio*/
 #banner {
   display: flex;
@@ -144,9 +142,58 @@ footer {
       width: 25px;
       height: 25px; }
 
+/*pagina de nosotros*/
+.contenedor-titulo {
+  margin-top: 0.8rem;
+  text-align: center;
+  border-bottom: white 2px solid;
+  width: 100%;
+  height: 4rem; }
+  .contenedor-titulo .titulo {
+    font-size: "Pacifico", cursive;
+    color: white;
+    font-family: "Pacifico", cursive; }
+
+.descripcion {
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 100%;
+  color: black;
+  text-align: center;
+  background-color: white;
+  border-radius: 25px; }
+  .descripcion p {
+    margin: 0; }
+
+/*seccion del staff de personas*/
+.contenedor-staff {
+  padding: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  color: black;
+  text-align: center;
+  border-radius: 25px; }
+
+.contenedor-trabajador .imagen-trabajador {
+  display: inline-block;
+  font-size: 7rem;
+  background-color: white;
+  border-radius: 100%;
+  border: white 2px solid; }
+
+.contenedor-trabajador .nombre-trabajador {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  color: black; }
+
+.contenedor-trabajador .puesto-trabajador {
+  font-family: "Pacifico", cursive;
+  font-size: "Raleway", sans-serif;
+  color: white; }
+
 /* Estilos para dispositivos móviles */
 @media only screen and (max-width: 768px) {
-  body, .body-paginas, .body-contacto {
+  body, .body-ajustable {
     margin: 0;
     padding: 0;
     grid-template-rows: auto auto auto; }
