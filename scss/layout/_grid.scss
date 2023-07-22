@@ -19,3 +19,7 @@ body{
     "footer footer footer"
     ;
 }
+.body-large{
+    @extend .body-ajustable;
+    grid-template-rows: auto auto auto;
+}

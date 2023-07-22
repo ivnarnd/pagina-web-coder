@@ -8,7 +8,7 @@
 /*font-size*/
 /*fuente de la pagina*/
 /*layout del sitio*/
-body, .body-ajustable {
+body, .body-ajustable, .body-large {
   background-color: #cfe8ef;
   font-family: "Raleway", sans-serif;
   display: grid;
@@ -16,8 +16,11 @@ body, .body-ajustable {
   grid-template-columns: 7.5vw 85vw 7.5vw;
   grid-template-areas: "header header header" "main main main" "footer footer footer"; }
 
-.body-ajustable {
+.body-ajustable, .body-large {
   grid-template-areas: "header header header" ". main ." "footer footer footer"; }
+
+.body-large {
+  grid-template-rows: auto auto auto; }
 
 nav {
   grid-area: header;
@@ -244,9 +247,62 @@ footer {
   font-family: "Raleway", sans-serif;
   margin: 0; }
 
+/*Estilos de sabores*/
+/*CONTENEDOR DE SABORES*/
+.contenedor-sabores {
+  margin: 1rem 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch; }
+  .contenedor-sabores .contenedor-sabor {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    margin: 1rem 0; }
+  .contenedor-sabores .contenedor-img {
+    padding: 1rem; }
+    .contenedor-sabores .contenedor-img img {
+      width: 300px;
+      height: 250px;
+      border-radius: 25px; }
+  .contenedor-sabores .info-sabor {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    .contenedor-sabores .info-sabor .titulo-sabor {
+      font-size: 2rem;
+      font-family: "Raleway", sans-serif; }
+    .contenedor-sabores .info-sabor .descripcion-sabor {
+      font-size: 1rem;
+      font-family: "Raleway", sans-serif; }
+    .contenedor-sabores .info-sabor .contenedor-botones {
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-evenly;
+      align-items: center; }
+      .contenedor-sabores .info-sabor .contenedor-botones .boton-sabores {
+        width: 20%;
+        border-radius: 25px;
+        background-color: #85c7de;
+        border: none;
+        color: white;
+        font-size: 1.5rem; }
+
 /* Estilos para dispositivos móviles */
 @media only screen and (max-width: 768px) {
-  body, .body-ajustable {
+  body, .body-ajustable, .body-large {
     margin: 0;
     padding: 0;
     grid-template-rows: auto auto auto; }
@@ -279,6 +335,42 @@ footer {
       margin-top: 1rem;
       border-radius: 25px;
       border: none; }
+  .contenedor-sabores {
+    margin: 1rem 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch; }
+    .contenedor-sabores .contenedor-sabor {
+      border-radius: 25px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin: 1rem 0;
+      padding: 1rem; }
+    .contenedor-sabores .contenedor-img {
+      padding: 1rem; }
+      .contenedor-sabores .contenedor-img img {
+        width: 250px;
+        height: 200px;
+        border-radius: 25px; }
+    .contenedor-sabores .info-sabor {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; }
+      .contenedor-sabores .info-sabor .contenedor-botones {
+        width: 80%; }
+        .contenedor-sabores .info-sabor .contenedor-botones .boton-sabores {
+          width: 30%; }
   footer {
     position: relative;
     bottom: 0; } }

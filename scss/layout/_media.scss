@@ -37,7 +37,40 @@
         }
 
     }  
-    
+    .contenedor-sabores{
+        margin: 1rem 0;
+        width: 100%;
+        height: 100%;
+        @include flexbox(flex,column,nowrap);
+        .contenedor-sabor{
+            border-radius: 25px;
+            background-color: $text-white-color;
+            @include flexbox(flex,column,nowrap,center,center);
+            width: 100%;
+            margin: 1rem 0;
+            padding: 1rem;
+        }
+        .contenedor-img{
+            padding: 1rem;
+            img{
+                width: 250px ;
+                height: 200px;
+                border-radius: 25px;
+            }
+        }
+        .info-sabor{
+            @include flexbox(flex,column,wrap,center,center);
+
+
+            .contenedor-botones{
+                width: 80%;
+                .boton-sabores{
+                    width: 30%;
+                }
+            }
+        }
+        
+    }
     
     
     footer{

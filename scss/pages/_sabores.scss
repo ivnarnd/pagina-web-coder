@@ -1,83 +1,49 @@
-
-
- .contenedor-titulo{
-     margin-top: 1rem;
-     text-align: center;
-     border-bottom: #FFFFFF 2px solid;
-     width: 100%;
-     height: 4rem;
- }
- .contenedor-titulo .titulo{
-     font-size: 3rem;
-     color: #FFFFFF;
-     font-family: 'Pacifico', cursive;
- }
-
 /*CONTENEDOR DE SABORES*/
 .contenedor-sabores{
     margin: 1rem 0;
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-}
-
-.contenedor-sabor{
-    background-color: #FFFFFF;
-    display: flex;
-    width: 100%;
-    margin: 1rem 0;
-}
-.contenedor-img{
-    padding: 1rem;
-  
-}
-.contenedor-img img{
-    width: 300px ;
-    height: 250px;
-    border-radius: 25px;
-}
-.info-sabor{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.titulo-sabor{
-    font-size: 2rem;
-    font-family: "raleway";
-}
-.descripcion-sabor{
-    font-size: 1rem;
-    font-family: "raleway";
-}
-.contenedor-botones{
-    width: 50%;
-    display: flex;
-    flex-flow:row nowrap;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.boton-sabores{
-    width: 20%;
-    border-radius: 25px;
-    background-color: #AED1E6;
-    border: none;
-    color: #FFFFFF;
-    font-size: 1.5rem;
-}
-
- /*Pie de pagina*/
-footer{
-    grid-area: footer;
-    background-color: #AED1E6;
-    text-align: center;
-    padding: 5px;
-   
-}
-footer p{
+    @include flexbox(flex,column,nowrap);
+    .contenedor-sabor{
+        background-color: $text-white-color;
+        @include flexbox(flex);
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .contenedor-img{
+        padding: 1rem;
+        img{
+            width: 300px ;
+            height: 250px;
+            border-radius: 25px;
+        }
+    }
+    .info-sabor{
+        @include flexbox(flex,column,wrap,center,center);
+        .titulo-sabor{
+            font-size: $font-size-name;
+            font-family:$font-text;
+        }
+        .descripcion-sabor{
+            font-size: 1rem;
+            font-family: $font-text;
+        }
+        .contenedor-botones{
+            width: 50%;
+            @include flexbox(flex,row,nowrap,space-evenly,center);
+            .boton-sabores{
+                width: 20%;
+                border-radius: 25px;
+                background-color: $elements-color;
+                border: none;
+                color: $text-white-color;
+                font-size: $font-size-text;
+            }
+        }
+    }
     
-    font-size: 1.20rem;
-   
-    color: #FFFFFF;
 }
+
+
+
+
