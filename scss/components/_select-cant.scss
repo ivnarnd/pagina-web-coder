@@ -1,26 +1,23 @@
 .radio-inputs {
     margin-top: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexbox(flex,row,nowrap,space-around,center);
     padding: 0.25rem;
-    width: 100%;
+    width: 70%;
     height: 100px;
   .radio {
     border-radius: 100%;
-    width: 150px;
+    width: 100px;
     height: 100%;
     text-align: center;
     input {
         display: none;
     }
     .name {
+        background-color: $columbia-blue-2;
         font-family: $font-title;
         font-size: 1.5rem;
-        display: flex;
+        @include flexbox(flex,row,nowrap,center,center);
         cursor: pointer;
-        align-items: center;
-        justify-content: center;
         height: 100%;
         width: 100%;
         border-radius: 100%;
@@ -31,7 +28,7 @@
     }
    } 
   input:checked + .name {
-    background-color: #fff;
+    background-color: $text-white-color;
     font-weight: 600;
   }
 

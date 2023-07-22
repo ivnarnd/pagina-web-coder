@@ -2,10 +2,7 @@
  .cabecera-busqueda{
     width: 100%;
     height: 15%;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
+    @include flexbox(flex,column,nowrap,center,center);
 }
 @import './barra_busqueda';
 @import './select-cant';

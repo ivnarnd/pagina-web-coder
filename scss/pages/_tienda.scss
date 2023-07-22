@@ -4,16 +4,9 @@
  .contenedor-tienda{
 
     width: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
+    @include flexbox(flex,column,nowrap,center,center);
  }
- .sub-titulo{
-    font-family: $font-title;
-    font-size: 2.25rem;
-    color: $text-white-color;
- }
+
 @import '../components/contenedor-favoritos';
 
  

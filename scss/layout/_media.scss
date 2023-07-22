@@ -71,7 +71,15 @@
         }
         
     }
-    
+    .tienda-seccion{
+        .contenedor-sabores-tienda{
+            @include flexbox(flex,column,nowrap,space-evenly,center);
+            .sabor-item{
+                width: 90%;
+                height: 400px;
+            }
+        }
+    }
     
     footer{
         position: relative;

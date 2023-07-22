@@ -2,19 +2,19 @@
 .tienda-seccion{
     margin: 1rem;
     width: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+    @include flexbox(flex,column,nowrap,flex-start,center);
     .contenedor-sabores-tienda{
         border-radius: 25px;
         background-color: $text-white-color;
         width: 100%;
         padding: 1rem;
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: space-evenly;
+        @include flexbox(flex,row,wrap,space-evenly,center);
       
     }
+    .sub-titulo{
+        font-family: $font-title;
+        font-size:$font-size-subtitle;
+        color: $text-white-color;
+     }
 }
 @import './sabor-item';

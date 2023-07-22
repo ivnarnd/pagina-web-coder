@@ -3,18 +3,13 @@
 /*CONTENEDOR DE BARRA DE BUSQUEDA*/
 .barra-busqueda{
     margin: 1rem;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
+    @include flexbox(flex,row,nowrap,center,stretch);
     width: 100%;
     .barra-busqueda-form{
         background-color: $text-white-color;
         width: 70%;
         border-radius: 25px;
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        justify-content: center;
+        @include flexbox(flex,row,nowrap,center,center);
         .caja-busqueda{
             width: 90%;
             border: none;
@@ -30,7 +25,7 @@
             width:10%;
             background-color: $text-white-color;
             border: none;
-            font-size: 1.5rem;
+            font-size: $font-size-text;
             border-radius: 25px;
             color: $sub-text;
         }
@@ -38,7 +33,7 @@
     .barra-btn-carrito{
         background-color: inherit;
         border: none;
-        font-size: 1.5rem;
+        font-size: $font-size-text;
         width: 10%;
     }
 
