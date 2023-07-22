@@ -11,9 +11,11 @@
 @import 'layout/barra-nav';
 @import 'layout/main';
 @import 'layout/footer';
-/*pagina principal del sitio*/
+/*Estilos principal del sitio*/
 @import './pages/home';
-/*pagina de nosotros*/
+/*Estilos de nosotros*/
 @import './pages/nosotros';
+/*Estilos de contacto*/
+@import './pages/contacto';
 //medias
 @import './layout/media';

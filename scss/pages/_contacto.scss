@@ -1,76 +1,58 @@
-
 /*CONTENEDOR DEL FORMULARIO*/
 .formulario-contacto{
-    background-color: #AED1E6;
+    background-color:$component-color;
     height: 85%;
-    width: 80%;
+    width: 60%;
     border-radius: 25px;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    justify-content: center;
-   
-}
-.mensaje-formulario{
-    font-size: 2rem;
-    height: 3rem;
-    font-family: 'Pacifico', cursive;
-    color: #FFFFFF;
-    text-align: center;
-}
+    @include flexbox(flex,column,wrap,space-around,center);
+    .mensaje-formulario{
+        font-size: $font-size-subtitle;
+        height: 3rem;
+        font-family:$font-title;
+        color: $text-white-color;
+        text-align: center;
+    }
+    input{
+        width: 90%;
+       
+        border-radius: 25px;
+        border: none;
+    }
+    .mensaje{
+        width: 90%;
+        height: 30%;
+        @include flexbox(flex,column,nowrap,center,center);
+        p{
+            text-align: center;
+        }
+        textarea{
+            resize: none;
+            border: none;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .boton{
+        width: 50%;
+        height: 10%;
+        background-color: $elements-color;
+        border-radius: 15px;
+        border: none;
+        color: $text-white-color;
+    }
+}  
 
 
-.datos-personales{
-    width: 90%;
-    height: 30%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
-.datos{
-    width: 45%;
-    height: 45%;
-    display: flex;
-    flex-flow: column nowrap;
-}
-.datos input{
-    width: 100%;
-    height: 50%;
-    border-radius: 15px;
-    border: none;
-}
 .texto-formulario{
-    color: #FFFFFF;
-    font-size: 1.5rem;
-    font-family: "Raleway";
+    color: $text-white-color;
+    font-size: $font-size-text;
+    font-family: $font-text;
     margin: 0;
 }
-.mensaje{
-    width: 90%;
-    height: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-}
-.mensaje p{
-    text-align: center;
-}
-.mensaje textarea{
-    resize: none;
-    border: none;
-    width: 100%;
-    height: 100%;
-}
-.boton{
-    width: 40%;
-    height: 10%;
-    background-color: #85C7DE;
-    border-radius: 15px;
-    border: none;
-    color: #FFFFFF;
-}
+
+
+
+
 
 
 

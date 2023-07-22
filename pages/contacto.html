@@ -16,7 +16,7 @@
     <title>I helados</title>
 </head>
 
-<body class="body-contacto">
+<body class="body-ajustable">
     <nav class="navbar navbar-expand-lg p-0 " aria-label="Offcanvas navbar large">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -57,35 +57,21 @@
     </nav>
 
     <!--Seccion Principal-->
-    <main>
+    <main class="main-ajustable">
         <!--Seccion de bienvenida de la pagina-->
         <section class="contenedor-titulo">
             <h3 class="titulo">Contacto</h3>
         </section>
         <form class="formulario-contacto" action="#" method="POST">
             <legend class="mensaje-formulario">Dejanos tu consulta!</legend>
-            <section class="datos-personales">
-                <label for="nombre" class="nombre datos">
-                    <p class="texto-formulario">Nombre</p>
-                    <input type="text" name="nombre" id="nombre">
-                </label>
-                <label for="correo" class="correo datos">
-                    <p class="texto-formulario">Correo Electronico</p>
-                    <input type="email" name="correo" id="correo">
-                </label>
-                <label for="telefono" class="telefono datos">
-                    <p class="texto-formulario">N°telefono</p>
-                    <input type="number" name="telefono" id="telefono">
-                </label>
-
-            </section>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+            <input type="email" name="correo" id="correo" placeholder="Correo Electronico">
+            <input type="number" name="telefono" id="telefono" placeholder="Telefono">
             <label for="mensaje" id="mensaje-usuario" class="mensaje">
                 <p class="texto-formulario">Mensaje</p>
                 <textarea name="mensaje" id="mensaje"></textarea>
             </label>
             <input type="submit" value="Enviar" class="boton">
-
-
         </form>
     </main>
     <footer>

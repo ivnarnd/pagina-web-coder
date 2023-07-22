@@ -1,4 +1,9 @@
 main{
     grid-area: main;
-    @include flexbox(flex, column,  nowrap, center,center)
+    @include flexbox(flex, column,  nowrap, space-around,center)
+
+}
+.main-ajustable{
+    @extend main;
+    height: 100%;
 }
