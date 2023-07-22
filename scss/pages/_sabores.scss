@@ -34,11 +34,17 @@
             .boton-sabores{
                 width: 20%;
                 border-radius: 25px;
-                background-color: $elements-color;
+                background-color: $component-color;
                 border: none;
                 color: $text-white-color;
                 font-size: $font-size-text;
-            }
+                &:hover{
+                    transform: scale(1.1,1);
+                    margin:0.5rem;
+                    border: 5px solid $elements-color ;
+                }
+            } 
+            
         }
     }
     

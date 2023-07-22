@@ -17,6 +17,14 @@
        
         border-radius: 25px;
         border: none;
+        &:hover{
+            transform: scale(1.1,1);
+            
+            border: 5px solid $elements-color ;
+        }
+        &:focus{
+            border-style: none;
+        }
     }
     .mensaje{
         width: 90%;
@@ -39,6 +47,10 @@
         border-radius: 15px;
         border: none;
         color: $text-white-color;
+        &:hover{
+            transform: scale(1.1,1);
+            border: 5px solid $text-white-color ;
+        }
     }
 }  
 

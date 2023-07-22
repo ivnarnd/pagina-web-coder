@@ -42,6 +42,9 @@ nav {
   font-size: 1.25rem;
   padding: 5px; }
 
+.nav-item :hover {
+  transform: scale(1.1, 1); }
+
 .offcanvas {
   background-color: #AED1E6; }
 
@@ -218,6 +221,11 @@ footer {
     width: 90%;
     border-radius: 25px;
     border: none; }
+    .formulario-contacto input:hover {
+      transform: scale(1.1, 1);
+      border: 5px solid #85c7de; }
+    .formulario-contacto input:focus {
+      border-style: none; }
   .formulario-contacto .mensaje {
     width: 90%;
     height: 30%;
@@ -240,6 +248,9 @@ footer {
     border-radius: 15px;
     border: none;
     color: white; }
+    .formulario-contacto .boton:hover {
+      transform: scale(1.1, 1);
+      border: 5px solid white; }
 
 .texto-formulario {
   color: white;
@@ -295,10 +306,14 @@ footer {
       .contenedor-sabores .info-sabor .contenedor-botones .boton-sabores {
         width: 20%;
         border-radius: 25px;
-        background-color: #85c7de;
+        background-color: #aed1e6;
         border: none;
         color: white;
         font-size: 1.5rem; }
+        .contenedor-sabores .info-sabor .contenedor-botones .boton-sabores:hover {
+          transform: scale(1.1, 1);
+          margin: 0.5rem;
+          border: 5px solid #85c7de; }
 
 /*Estilos de tienda*/
 /*CONTENEDOR DE ELEMENTOS DE BUSQUEDA*/
@@ -349,6 +364,8 @@ footer {
     border: none;
     font-size: 1.5rem;
     width: 10%; }
+    .barra-busqueda .barra-btn-carrito:hover {
+      transform: scale(1.1, 1); }
 
 .radio-inputs {
   margin-top: 1rem;
@@ -384,6 +401,8 @@ footer {
       padding: .5rem 0;
       color: black;
       transition: all .15s ease-in-out; }
+    .radio-inputs .radio:hover {
+      transform: scale(1.1, 1); }
   .radio-inputs input:checked + .name {
     background-color: white;
     font-weight: 600; }
@@ -446,6 +465,10 @@ footer {
     .sabor-item .sabor-item-detalle h4 {
       color: white;
       font-family: "Raleway", sans-serif; }
+  .sabor-item:hover {
+    transform: scale(1.1, 1);
+    margin: 0.5rem;
+    border: 5px solid #85c7de; }
 
 .detalle-btns {
   width: 100%;
@@ -460,6 +483,10 @@ footer {
     color: #85c7de;
     width: 40%;
     background-color: white; }
+    .detalle-btns .boton-sabores:hover {
+      transform: scale(1.1, 1);
+      margin: 0.5rem;
+      border: 5px solid #85c7de; }
 
 /* Estilos para dispositivos móviles */
 @media only screen and (max-width: 768px) {

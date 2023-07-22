@@ -35,6 +35,9 @@
         border: none;
         font-size: $font-size-text;
         width: 10%;
+        &:hover{
+            transform: scale(1.1,1);
+        }
     }
 
 }

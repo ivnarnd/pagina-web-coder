@@ -25,7 +25,9 @@
         padding: .5rem 0;
         color:$text-black-color;
         transition: all .15s ease-in-out;
-    }
+    }&:hover{
+      transform: scale(1.1,1);
+  }
    } 
   input:checked + .name {
     background-color: $text-white-color;
