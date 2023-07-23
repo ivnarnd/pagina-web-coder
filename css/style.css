@@ -38,15 +38,18 @@ nav {
 /*enlaces del menu*/
 .nav-item .nav-link {
   text-decoration: none;
-  color: #FFFFFF;
+  color: white;
   font-size: 1.25rem;
   padding: 5px; }
+  .nav-item .nav-link.active {
+    color: #85c7de;
+    font-weight: 400px; }
 
-.nav-item :hover {
+.nav-item:hover {
   transform: scale(1.1, 1); }
 
 .offcanvas {
-  background-color: #AED1E6; }
+  background-color: #aed1e6; }
 
 main, .main-ajustable {
   grid-area: main;

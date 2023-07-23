@@ -23,16 +23,21 @@ nav{
 .nav-item{
     .nav-link{
         text-decoration: none;
-        color: #FFFFFF;
+        color: $text-white-color;
         font-size: 1.25rem;
         padding: 5px;
+        &.active{
+            color: $elements-color;
+            font-weight: 400px;
+        }
     }
-    & :hover{
+    &:hover{
         transform: scale(1.1,1);
     }
+   
 }
 
 .offcanvas{
-    background-color: #AED1E6;
+    background-color: $component-color;
     
 }
