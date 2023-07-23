@@ -160,7 +160,17 @@ footer {
   .contenedor-titulo .titulo {
     font-size: "Pacifico", cursive;
     color: white;
-    font-family: "Pacifico", cursive; }
+    font-family: "Pacifico", cursive;
+    animation-name: desplazamiento;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s; }
+
+@keyframes desplazamiento {
+  0% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
 
 .descripcion {
   margin-top: 1rem;
@@ -222,8 +232,8 @@ footer {
     border-radius: 25px;
     border: none; }
     .formulario-contacto input:hover {
-      transform: scale(1.1, 1);
-      border: 5px solid #85c7de; }
+      transform: scale(1.05, 1);
+      border: 2px solid #85c7de; }
     .formulario-contacto input:focus {
       border-style: none; }
   .formulario-contacto .mensaje {

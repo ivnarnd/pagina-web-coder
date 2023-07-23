@@ -9,5 +9,18 @@
         font-size: $font-title;
         color: $text-white-color;
         font-family: $font-title;
+        animation-name: desplazamiento;
+        animation-iteration-count:initial;
+        animation-timing-function:ease-in-out;
+        animation-duration: 0.5s;
+       
+
     }
+}
+@keyframes desplazamiento {
+    0%{ width: 0%}
+    
+    100%{ width: 100%;}
+      
+ 
 }
