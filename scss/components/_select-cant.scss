@@ -2,7 +2,7 @@
     margin-top: 1rem;
     @include flexbox(flex,row,nowrap,space-around,center);
     padding: 0.25rem;
-    width: 70%;
+    width: 100%;
     height: 100px;
   .radio {
     border-radius: 100%;

@@ -388,7 +388,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   padding: 0.25rem;
-  width: 70%;
+  width: 100%;
   height: 100px; }
   .radio-inputs .radio {
     border-radius: 100%;
