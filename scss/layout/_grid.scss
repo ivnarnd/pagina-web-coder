@@ -14,7 +14,8 @@ body{
 }
 .body-ajustable{
     @extend body;
-    grid-template-areas: "header header header"
+    grid-template-areas:
+    "header header header"
     ". main ."
     "footer footer footer"
     ;

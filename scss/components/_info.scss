@@ -3,6 +3,7 @@
 #info{
     
     width: 100%;
+    height: 35%;
     @include flexbox(flex, column, nowrap, center, center);
     text-align: center;
 
