@@ -180,6 +180,12 @@ footer {
   100% {
     width: 100%; } }
 
+.main-nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; }
+
 .descripcion {
   margin-top: 1rem;
   padding: 1rem;
@@ -193,29 +199,29 @@ footer {
 
 /*seccion del staff de personas*/
 .contenedor-staff {
-  padding: 1rem;
-  margin-top: 1rem;
   width: 100%;
   color: black;
   text-align: center;
   border-radius: 25px; }
 
-.contenedor-trabajador .imagen-trabajador {
-  display: inline-block;
-  font-size: 7rem;
-  background-color: white;
-  border-radius: 100%;
-  border: white 2px solid; }
-
-.contenedor-trabajador .nombre-trabajador {
-  font-family: "Raleway", sans-serif;
-  font-size: 2rem;
-  color: black; }
-
-.contenedor-trabajador .puesto-trabajador {
-  font-family: "Pacifico", cursive;
-  font-size: "Raleway", sans-serif;
-  color: white; }
+.contenedor-trabajador {
+  margin-top: 0.5rem; }
+  .contenedor-trabajador .imagen-trabajador {
+    display: inline-block;
+    height: 200px;
+    width: 250px;
+    font-size: 7rem;
+    background-color: white;
+    border-radius: 100%;
+    border: white 2px solid; }
+  .contenedor-trabajador .nombre-trabajador {
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    color: black; }
+  .contenedor-trabajador .puesto-trabajador {
+    font-family: "Pacifico", cursive;
+    font-size: "Raleway", sans-serif;
+    color: white; }
 
 /*Estilos de contacto*/
 /*CONTENEDOR DEL FORMULARIO*/

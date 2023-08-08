@@ -1,6 +1,11 @@
 
 @import '../components/titulo-secciones';
-
+.main-nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
 .descripcion{
     margin-top: 1rem;
     padding: 1rem;
@@ -16,9 +21,6 @@
 
 /*seccion del staff de personas*/
 .contenedor-staff{
-    
-    padding: 1rem;
-    margin-top: 1rem;
     width: 100%;
     color: $text-black-color;
     text-align: center;
@@ -26,8 +28,11 @@
 
 }
 .contenedor-trabajador{
+    margin-top: 0.5rem;
     .imagen-trabajador{
         display: inline-block;
+        height: 200px;
+        width: 250px;
         font-size: 7rem;
         background-color: $text-white-color;
         border-radius: 100%;
