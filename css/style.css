@@ -89,6 +89,7 @@ footer {
     object-fit: cover; }
   #banner h2 {
     color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
     position: absolute;
     top: 70%;
     left: 50%;
