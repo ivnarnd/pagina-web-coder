@@ -15,8 +15,9 @@
     color: $text-white-color;
     text-align: center;
      h2{
+        color: $text-white-color;
         position: absolute;
-        top: 50%;
+        top: 70%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: $font-size-title-page;

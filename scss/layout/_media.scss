@@ -10,8 +10,11 @@
     #banner{
         display: none;
     }
-    
+    .intro{
+        height: 20%;
+    }
     #info{
+        height: 80%;
         .lista-contacto{
             padding: 0;
             @include flexbox(flex, column, nowrap, center, center);
