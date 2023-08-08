@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box; }
 
+body, .body-ajustable, .body-large {
+  overflow-x: hidden !important; }
+
 /*Colores de la pagina*/
 /*font-size*/
 /*fuente de la pagina*/
@@ -99,7 +102,7 @@ footer {
 
 /*Seccion de bienvenida*/
 .intro {
-  padding: 0.5rem;
+  padding-top: 0.5rem;
   width: 100%;
   height: 20%;
   background-color: white;
@@ -230,7 +233,7 @@ footer {
 /*CONTENEDOR DEL FORMULARIO*/
 .formulario-contacto {
   background-color: #aed1e6;
-  height: 85%;
+  height: 80%;
   width: 60%;
   border-radius: 25px;
   display: flex;
@@ -380,6 +383,7 @@ footer {
       .barra-busqueda .barra-busqueda-form .caja-busqueda:active {
         border: none; }
     .barra-busqueda .barra-busqueda-form .btn-buscar {
+      margin-right: 0.5rem;
       width: 10%;
       background-color: white;
       border: none;
@@ -387,6 +391,7 @@ footer {
       border-radius: 25px;
       color: #a0c4e2; }
   .barra-busqueda .barra-btn-carrito {
+    margin-left: 0.5rem;
     background-color: inherit;
     border: none;
     font-size: 1.5rem;

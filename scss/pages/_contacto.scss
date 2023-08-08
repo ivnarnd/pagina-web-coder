@@ -1,7 +1,7 @@
 /*CONTENEDOR DEL FORMULARIO*/
 .formulario-contacto{
     background-color:$component-color;
-    height: 85%;
+    height: 80%;
     width: 60%;
     border-radius: 25px;
     @include flexbox(flex,column,wrap,space-around,center);
