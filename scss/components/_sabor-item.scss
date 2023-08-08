@@ -21,8 +21,6 @@
         }
     }
     &:hover{
-        transform: scale(1.1,1);
-        margin:0.5rem;
         border: 5px solid $elements-color ;
     }
 }
@@ -36,8 +34,6 @@
         width: 40%;
         background-color: $text-white-color;
         &:hover{
-            transform: scale(1.1,1);
-            margin:0.5rem;
             border: 5px solid $elements-color ;
         }
         

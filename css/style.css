@@ -492,8 +492,6 @@ footer {
       color: white;
       font-family: "Raleway", sans-serif; }
   .sabor-item:hover {
-    transform: scale(1.1, 1);
-    margin: 0.5rem;
     border: 5px solid #85c7de; }
 
 .detalle-btns {
@@ -510,8 +508,6 @@ footer {
     width: 40%;
     background-color: white; }
     .detalle-btns .boton-sabores:hover {
-      transform: scale(1.1, 1);
-      margin: 0.5rem;
       border: 5px solid #85c7de; }
 
 /* Estilos para dispositivos móviles */
