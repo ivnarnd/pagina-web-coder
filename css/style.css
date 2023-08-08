@@ -245,9 +245,9 @@ footer {
   .formulario-contacto input {
     width: 90%;
     border-radius: 25px;
-    border: none; }
+    border: none;
+    text-align: center; }
     .formulario-contacto input:hover {
-      transform: scale(1.05, 1);
       border: 2px solid #85c7de; }
     .formulario-contacto input:focus {
       border-style: none; }
@@ -274,7 +274,6 @@ footer {
     border: none;
     color: white; }
     .formulario-contacto .boton:hover {
-      transform: scale(1.1, 1);
       border: 5px solid white; }
 
 .texto-formulario {

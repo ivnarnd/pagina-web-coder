@@ -14,12 +14,10 @@
     }
     input{
         width: 90%;
-       
         border-radius: 25px;
         border: none;
+        text-align: center;
         &:hover{
-            transform: scale(1.05,1);
-            
             border: 2px solid $elements-color ;
         }
         &:focus{
@@ -48,7 +46,6 @@
         border: none;
         color: $text-white-color;
         &:hover{
-            transform: scale(1.1,1);
             border: 5px solid $text-white-color ;
         }
     }
