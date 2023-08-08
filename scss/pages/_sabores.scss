@@ -3,12 +3,13 @@
     margin: 1rem 0;
     width: 100%;
     height: 100%;
-    @include flexbox(flex,column,nowrap);
+    @include flexbox(flex,column,nowrap,center,center);
     .contenedor-sabor{
         background-color: $text-white-color;
         @include flexbox(flex);
-        width: 100%;
+        width: 80%;
         margin: 1rem 0;
+        border-radius: 25px;
     }
     .contenedor-img{
         padding: 1rem;
